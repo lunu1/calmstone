@@ -107,7 +107,7 @@ export default function JobCard({ job }) {
       {/* ───────────────────────── Detail Modal ───────────────────────── */}
       {isDetailOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-md">
-          <div className="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl p-8 shadow-2xl animate-fadeIn border-2 border-amber-200/80">
+          <div className="bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-2xl p-8 shadow-2xl animate-fadeIn border-2 border-amber-200/80">
             <div className="flex justify-between items-start mb-6">
               <h3 className="text-3xl font-bold text-black tracking-tight">
                 {job.title}

@@ -11,20 +11,65 @@ export default function OilfieldSurfaceConstruction() {
 
 const sections = [
   {
-    id: "material-equipment-supply",
-    title: "Material and Equipment Supply",
-    image: "/images/equipment.jpg", 
+    id: "control-system-supply",
+    title: "Control System Supply (ICSS, DCS, SIS, F&G)",
+    image: "/images/control-supply.jpg",
     intro:
-      "We provide reliable and high-quality material and equipment supply services for a wide range of industrial needs, ensuring timely delivery and compliance with project specifications.",
+      "Integrated Control & Safety System (ICSS) is a unified automation platform that brings together Distributed Control Systems (DCS) for continuous process control, Safety Instrumented Systems (SIS) for automated protection against hazardous events, and Fire & Gas (F&G) Detection Systems for identifying fire, smoke, or gas leaks. Together, these systems enable centralized monitoring, control, and safety management, ensuring efficient and secure operations across complex oil and gas facilities.",
     scope: [
-      "Control System: ICSS, DCS, SIS, and F&G detection systems",
-      "Piping Bulk Material",
-      "E&I Bulk Material"
+      "Design and engineering of ICSS architecture and system integration",
+      "Development and configuration of DCS, SIS, and F&G logic and HMI interfaces",
+      "Preparation of control narratives, cause & effect diagrams, and I/O lists",
+      "Control panel fabrication, wiring, and Factory Acceptance Testing (FAT)",
+      "Installation, loop checking, and commissioning of all control systems",
+      "Emergency shutdown (ESD) and F&G system testing and validation",
+      "System integration with third-party packages and remote interfaces",
+      "Training, documentation, and handover support for end users",
     ],
     conclusion:
-      "Our material and equipment supply services are designed to meet the highest standards of quality and performance, ensuring that your project proceeds smoothly and on schedule.",
+      "Our control system supply services provide end-to-end solutions for automation and safety systems in industrial and oil & gas environments.",
+  },
+  {
+    id: "piping-bulk-material",
+    title: "Piping Bulk Material",
+    image: "/images/piping-material.jpg",
+    intro:
+      "This scope covers the end-to-end supply of piping bulk materials required for oil & gas construction projects. It includes material take-off (MTO) preparation, procurement of pipes, fittings, flanges, gaskets, and fasteners, along with vendor management, quality inspection, and logistics. All materials are supplied in compliance with international standards and project specifications, ensuring proper traceability, timely delivery, and support for construction execution.",
+    scope: [
+      "Procurement of piping materials (pipes, fittings, flanges, gaskets, bolts, etc.) as per project specifications",
+      "Material take-off (MTO) preparation from isometric and layout drawings",
+      "Vendor selection, technical evaluation, and purchase order management",
+      "Quality assurance and inspection (mill test certificates, third-party inspections, dimensional checks)",
+      "Logistics and delivery coordination to project site or storage yard",
+      "Material traceability and tagging as per project and client requirements",
+      "Inventory control and material reconciliation during project execution",
+      "Compliance with international standards (ASME, ASTM, API) and client specifications",
+    ],
+    conclusion:
+      "We ensure reliable sourcing and delivery of piping materials to meet your project timeline, budget, and technical standards.",
+  },
+  {
+    id: "ei-bulk-material",
+    title: "Electrical & Instrumentation (E&I) Bulk Material",
+    image: "/images/ei-material.jpg",
+    intro:
+      "This scope involves the supply of Electrical and Instrumentation bulk materials required for industrial and oil & gas projects. It includes preparation of material take-offs (MTOs), procurement of cables, cable trays, junction boxes, lighting, earthing materials, instruments, fittings, and accessories. The service ensures vendor coordination, quality inspection, compliance with international standards, and timely delivery to site with full material traceability and documentation support.",
+    scope: [
+      "Preparation of Material Take-Offs (MTOs) from E&I drawings and specifications",
+      "Procurement of electrical materials such as power/control cables, cable trays, glands, lighting, junction boxes, and earthing components",
+      "Procurement of instrumentation materials including transmitters, tubing, fittings, and field instruments",
+      "Vendor evaluation, selection, and purchase order management",
+      "Quality assurance and inspection (as per project standards and certifications)",
+      "Material identification, tagging, and traceability",
+      "Logistics, packaging, and site delivery coordination",
+      "Compliance with IEC, NEC, ATEX, and relevant international standards",
+      "Support for material documentation and project handover",
+    ],
+    conclusion:
+      "Our E&I material supply services offer high-quality components, precise documentation, and streamlined delivery to support your engineering and installation requirements.",
   },
 ];
+
 
 
 

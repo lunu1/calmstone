@@ -12,7 +12,7 @@ export default function Logo() {
 
   // ✅ Change logo based on page
   const useLightLogo = pathname === '/aboutus' || pathname === '/contact';
-  const logoSrc = useLightLogo ? '/logo.png' : '/logow.png';
+  const logoSrc = useLightLogo ? '/logo.png' : '/logo.png';
 
   const handleClick = () => {
     router.push('/');

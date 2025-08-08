@@ -38,17 +38,17 @@ export default function LZLTDPMTOBOQ() {
         <div className="max-w-6xl mx-auto">
           {/* Project Info Block */}
           <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
-            {/* <div>
+            <div>
               <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</h3>
-              <p className="text-xl font-semibold text-amber-600">Lower Zakum Field, Offshore UAE</p>
+              <p className="text-xl font-semibold text-amber-600">-</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Project</h3>
-              <p className="text-xl font-semibold text-amber-600">LZ LTDP 1</p>
-            </div> */}
+              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">YEAR</h3>
+              <p className="text-xl font-semibold text-amber-600">-</p>
+            </div>
             <div>
               <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Client</h3>
-              <p className="text-xl font-semibold text-amber-600">ADNOC Offshore</p>
+              <p className="text-xl font-semibold text-amber-600">ADNOC</p>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export default function LZLTDPMTOBOQ() {
               documentation for procurement and commissioning by ADNOC Offshore.
             </p> */}
           </div>
-              <div className="relative w-full mt-12 mb-8">
+              {/* <div className="relative w-full mt-12 mb-8">
                       <Image
                         src="/images/project2.jpg" // ← Add your additional image path here
                         alt="Engineering Service"
@@ -72,7 +72,7 @@ export default function LZLTDPMTOBOQ() {
                         quality={90}
                         className="rounded-lg shadow-lg"
                       />
-                    </div>
+                    </div> */}
         </div>
       </section>
     </>

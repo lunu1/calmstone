@@ -20,29 +20,34 @@ const dummyJobs = [
     experience: "15+ years",
     salary: "Starting from AED 15,000 to AED 25,000",
     description:
-      "The ideal candidate will have over 15 years of hands-on experience managing upstream construction operations, with proven leadership in executing complex greenfield and brownfield projects in remote and challenging environments. This role demands in-depth technical knowledge, exceptional coordination skills, and a relentless focus on safety and compliance.",
+      "We are hiring a performance-driven Construction Manager for large-scale oil & gas and EPC construction projects in the UAE. The selected candidate will oversee project execution, field management, and stakeholder coordination while being held accountable for KPIs and incentivized through a lucrative commission and bonus structure.",
     responsibilities: [
-      "Plan, manage, and execute construction and engineering activities for upstream oil & gas projects including well sites, flowlines, gathering stations, and early production facilities (EPFs).",
-      "Ensure adherence to project specifications, engineering designs, quality standards, and safety regulations.",
-      "Lead end-to-end business development.",
-      "Oversee contractors and vendors during site preparation, civil works, mechanical and piping installation, structural fabrication, and commissioning support.",
-      "Monitor construction schedules and budgets, and proactively manage deviations or risks.",
-      "Serve as the focal point for construction-related matters on site, representing the project team in meetings with clients, authorities, and third parties.",
-      "Drive productivity improvements and ensure optimal resource utilization.",
+      "Project Execution & Delivery : Lead and deliver EPC and construction projects in compliance with contractual, budgetary, and safety requirements.",
+      "Define project milestones and ensure on-time completion within approved scope and cost.",
+      "Manage subcontractors, vendors, consultants, and site teams across disciplines.",
+      "Conduct progress reviews, generate reports, and ensure quality deliverables.",
+    "Monitor risk and mitigate project deviations proactively.Business Development & Commercial Growth ",
+    "Identify new project opportunities within existing client accounts and new sectors.",
+    "Identify scope variations, additional works, and VO opportunities",
+    "Prepare technical proposals and tender documentation in coordination with estimation and commercial teams. ",
+    "Build strong relationships with ADNOC, EPC contractors, and consultants",
+    "Influence repeat business and client referrals.Health, Safety & Compliance",
+    "Ensure full HSE compliance with ADNOC and UAE regulations.",
+    "Lead audits, inspections, and incident prevention programs.",
+    "Team Building : Lead the development, mentoring, and upskilling of the site project team ",
+    "Support HR in recruiting specialist roles through networks.",
+    "Maintain a network of manpower suppliers and subcontractors to ensure rapid resource mobilization during project ramp-ups",
+    "Support long-term team capability by assigning coaching, on-the-job training, and structured skill-building programs",
+
     ],
     requirements: [
-      "Masters degree in Civil, Mechanical, Petroleum, or Electrical Engineering.",
-      "Minimum 15 + years of experience in upstream construction in oil & gas (onshore/offshore).",
-      "Candidates with ADNOC project experience or ADNOC approval are preferred.",
-      "UAE work experience mandatory.",
-      "Fluent in English and Arabic will be an advantage",
-      "Strong background in construction of well pads, manifolds, separators, pipelines, and field processing facilities.",
-      "Familiar with standards such as API, ASME, ANSI, and local regulatory frameworks.",
-      "Experience managing multidisciplinary teams in remote and logistically complex environments.",
-      "Proficient in Primavera P6/MS Project, AutoCAD, and field construction software.",
-      "Strong communication and stakeholder management skills.",
+      "MBA degree in Civil, Mechanical, Petroleum, or Electrical Engineering.",
+     "Minimum 15 + years of experience within minimum 5 years in upstream construction in oil & gas (onshore/offshore).",
+     "10 years of UAE experience is mandatory",
+     "Minimum of $50 million value projects handled in the past under the direct involvements.",
+     "Candidates with ADNOC project experience or ADNOC approval are preferred."
     ],
-    postedDate: "2024-01-15",
+    postedDate: "04-08-2025",
   },
   {
     _id: "2",
@@ -71,68 +76,68 @@ const dummyJobs = [
       "Strong coordination, problem-solving, and communication skills.",
       "Fluent in English.",
     ],
-    postedDate: "2024-01-15",
+    postedDate: "04-08-2025",
   },
-  {
-    _id: "3",
-    title: "Site Surveyor (Civil)",
-    department: "Surveying",
-    location: "Abu Dhabi, UAE (Site-based)",
-    type: "Full-time",
-    experience: "7+ years",
-    salary: "Starting from AED 7000",
-    description:
-      "The ideal candidate will have strong knowledge of survey instruments, ADNOC standards, and site coordination, ensuring precision in all civil layouts and structural executions.",
-    responsibilities: [
-      "Perform setting out, leveling, and alignment for all civil construction activities (e.g., excavation, foundations, concrete structures).",
-      "Interpret drawings and coordinate survey data with construction plans.",
-      "Operate total stations, GPS, auto levels, and other survey equipment accurately.",
-      "Prepare and maintain survey records, site measurement logs, and as-built data.",
-      "Coordinate with engineers, QC team, and subcontractors to ensure correct layout and elevations.",
-      "Verify dimensions, levels, and alignment during and after execution.",
-      "Support quality inspections and provide survey data for reporting and handover.",
-    ],
-    requirements: [
-      "Diploma or Bachelor’s in Surveying, Civil Engineering, or related field.",
-      "7+ years of site surveying experience in civil projects; ADNOC or UAE oil & gas site experience required.",
-      "Proficient in using surveying instruments (Total Station, GPS, Level).",
-      "Strong knowledge of reading civil drawings and setting out procedures.",
-      "Familiarity with ADNOC standards is a strong advantage.",
-      "Fluent in English.",
-      "UAE Experience is mandatory.",
-    ],
-    postedDate: "2024-01-15",
-  },
-  {
-    _id: "4",
-    title: "HSE Officer",
-    department: "Health & Safety",
-    location: "Abu Dhabi, UAE (Site-based)",
-    type: "Full-time",
-    experience: "7+ years",
-    salary: "Starting from AED 6000",
-    description:
-      "The ideal candidate will ensure compliance with ADNOC and UAE HSE regulations, manage risk assessments, and promote a strong safety culture across all project activities.",
-    responsibilities: [
-      "Implement and monitor the site-specific HSE Management System in accordance with ADNOC and UAE legal requirements.",
-      "Conduct daily site inspections, toolbox talks, and safety briefings to promote HSE awareness.",
-      "Identify unsafe acts and conditions and recommend corrective actions.",
-      "Maintain records of incident/accident reports, near misses, and conduct root cause analysis.",
-      "Ensure Permit to Work (PTW) compliance and participate in job safety analysis (JSA).",
-      "Coordinate emergency drills, fire safety checks, and first aid preparedness.",
-      "Liaise with site management, subcontractors, and client representatives on all HSE matters.",
-      "Prepare and submit daily, weekly, and monthly HSE reports to the management.",
-      "Support audits, risk assessments, and environmental monitoring activities.",
-    ],
-    requirements: [
-      "Bachelor’s degree or Diploma in Engineering or Occupational Health & Safety.",
-      "Minimum 7 years of HSE experience in civil/oil & gas construction projects.",
-      "NEBOSH IGC certification is mandatory.",
-      "ADNOC-approved or experience working under ADNOC HSE guidelines (preferred).",
-      "Excellent communication and interpersonal skills.",
-    ],
-    postedDate: "2024-01-15",
-  },
+  // {
+  //   _id: "3",
+  //   title: "Site Surveyor (Civil)",
+  //   department: "Surveying",
+  //   location: "Abu Dhabi, UAE (Site-based)",
+  //   type: "Full-time",
+  //   experience: "7+ years",
+  //   salary: "Starting from AED 7000",
+  //   description:
+  //     "The ideal candidate will have strong knowledge of survey instruments, ADNOC standards, and site coordination, ensuring precision in all civil layouts and structural executions.",
+  //   responsibilities: [
+  //     "Perform setting out, leveling, and alignment for all civil construction activities (e.g., excavation, foundations, concrete structures).",
+  //     "Interpret drawings and coordinate survey data with construction plans.",
+  //     "Operate total stations, GPS, auto levels, and other survey equipment accurately.",
+  //     "Prepare and maintain survey records, site measurement logs, and as-built data.",
+  //     "Coordinate with engineers, QC team, and subcontractors to ensure correct layout and elevations.",
+  //     "Verify dimensions, levels, and alignment during and after execution.",
+  //     "Support quality inspections and provide survey data for reporting and handover.",
+  //   ],
+  //   requirements: [
+  //     "Diploma or Bachelor’s in Surveying, Civil Engineering, or related field.",
+  //     "7+ years of site surveying experience in civil projects; ADNOC or UAE oil & gas site experience required.",
+  //     "Proficient in using surveying instruments (Total Station, GPS, Level).",
+  //     "Strong knowledge of reading civil drawings and setting out procedures.",
+  //     "Familiarity with ADNOC standards is a strong advantage.",
+  //     "Fluent in English.",
+  //     "UAE Experience is mandatory.",
+  //   ],
+  //   postedDate: "2024-01-15",
+  // },
+  // {
+  //   _id: "4",
+  //   title: "HSE Officer",
+  //   department: "Health & Safety",
+  //   location: "Abu Dhabi, UAE (Site-based)",
+  //   type: "Full-time",
+  //   experience: "7+ years",
+  //   salary: "Starting from AED 6000",
+  //   description:
+  //     "The ideal candidate will ensure compliance with ADNOC and UAE HSE regulations, manage risk assessments, and promote a strong safety culture across all project activities.",
+  //   responsibilities: [
+  //     "Implement and monitor the site-specific HSE Management System in accordance with ADNOC and UAE legal requirements.",
+  //     "Conduct daily site inspections, toolbox talks, and safety briefings to promote HSE awareness.",
+  //     "Identify unsafe acts and conditions and recommend corrective actions.",
+  //     "Maintain records of incident/accident reports, near misses, and conduct root cause analysis.",
+  //     "Ensure Permit to Work (PTW) compliance and participate in job safety analysis (JSA).",
+  //     "Coordinate emergency drills, fire safety checks, and first aid preparedness.",
+  //     "Liaise with site management, subcontractors, and client representatives on all HSE matters.",
+  //     "Prepare and submit daily, weekly, and monthly HSE reports to the management.",
+  //     "Support audits, risk assessments, and environmental monitoring activities.",
+  //   ],
+  //   requirements: [
+  //     "Bachelor’s degree or Diploma in Engineering or Occupational Health & Safety.",
+  //     "Minimum 7 years of HSE experience in civil/oil & gas construction projects.",
+  //     "NEBOSH IGC certification is mandatory.",
+  //     "ADNOC-approved or experience working under ADNOC HSE guidelines (preferred).",
+  //     "Excellent communication and interpersonal skills.",
+  //   ],
+  //   postedDate: "2024-01-15",
+  // },
   {
     _id: "5",
     title: "Accountant",
@@ -163,41 +168,41 @@ const dummyJobs = [
       "Ability to work independently and as part of a team.",
       "Strong communication and reporting skills.",
     ],
-    postedDate: "2024-01-15",
+    postedDate: "04-08-2025",
   },
-  {
-    _id: "6",
-    title: "Project Planning Control Engineer",
-    department: "Project Controls",
-    location: "Abu Dhabi, UAE",
-    type: "Full-time",
-    experience: "8–10 years",
-    salary: "Starting AED 7000",
-    preference: "The candidates who are immediately available to join",
+  // {
+  //   _id: "6",
+  //   title: "Project Planning Control Engineer",
+  //   department: "Project Controls",
+  //   location: "Abu Dhabi, UAE",
+  //   type: "Full-time",
+  //   experience: "8–10 years",
+  //   salary: "Starting AED 7000",
+  //   preference: "The candidates who are immediately available to join",
 
-    description:
-      "The Project Planning Control Engineer is responsible for planning, scheduling, cost control, and progress monitoring of Oil & Gas projects. The ideal candidate will have expertise in Engineering phases of projects, cost estimation, risk analysis, and scheduling tools like Primavera P6 and MS Project.",
-    responsibilities: [
-      "Provide a 2 month look ahead plan and coordinate with project team for any project delays and development of recovery plan.",
-      "Maintain and update the PMS for any modifications and prepare the weekly progress report to be submitted to Client every Friday.",
-      "Develop Work Breakdown Structures (WBS) and resource-loaded schedules for Engineering.",
-      "Monitor project costs and ensure alignment with the approved budget.",
-      "Prepare cost estimates, cash flow forecasts, and variance reports.",
-      "Evaluate payment certificates of subcontractor ensuring that there are no cost overruns of progress claims.",
-      "Prepare and submit progress certificates in a timely manner to ensure positive cashflow.",
-      "Identify project risks and develop risk mitigation plans.",
-      "Implement Earned Value Management (EVM) techniques for tracking performance.",
-    ],
-    requirements: [
-      "8-10  years of experience in project planning & control in Oil & Gas, EPC projects.",
-      "Previous experience working for ADNOC projects.",
-      "Bachelors or above degree in Civil, Mechanical, Petroleum, or Electrical Engineering Proficiency in Primavera P6 is mandatory.",
-      "Strong understanding of project management methodologies, risk assessment, and cost estimation.",
-      "Knowledge of international codes and standards applicable to Oil & Gas projects.",
-      "Certification in PMP, CAPM, PRINCE2, or AACE (CCP, PSP) is a plus.",
-    ],
-    postedDate: "2024-01-15",
-  },
+  //   description:
+  //     "The Project Planning Control Engineer is responsible for planning, scheduling, cost control, and progress monitoring of Oil & Gas projects. The ideal candidate will have expertise in Engineering phases of projects, cost estimation, risk analysis, and scheduling tools like Primavera P6 and MS Project.",
+  //   responsibilities: [
+  //     "Provide a 2 month look ahead plan and coordinate with project team for any project delays and development of recovery plan.",
+  //     "Maintain and update the PMS for any modifications and prepare the weekly progress report to be submitted to Client every Friday.",
+  //     "Develop Work Breakdown Structures (WBS) and resource-loaded schedules for Engineering.",
+  //     "Monitor project costs and ensure alignment with the approved budget.",
+  //     "Prepare cost estimates, cash flow forecasts, and variance reports.",
+  //     "Evaluate payment certificates of subcontractor ensuring that there are no cost overruns of progress claims.",
+  //     "Prepare and submit progress certificates in a timely manner to ensure positive cashflow.",
+  //     "Identify project risks and develop risk mitigation plans.",
+  //     "Implement Earned Value Management (EVM) techniques for tracking performance.",
+  //   ],
+  //   requirements: [
+  //     "8-10  years of experience in project planning & control in Oil & Gas, EPC projects.",
+  //     "Previous experience working for ADNOC projects.",
+  //     "Bachelors or above degree in Civil, Mechanical, Petroleum, or Electrical Engineering Proficiency in Primavera P6 is mandatory.",
+  //     "Strong understanding of project management methodologies, risk assessment, and cost estimation.",
+  //     "Knowledge of international codes and standards applicable to Oil & Gas projects.",
+  //     "Certification in PMP, CAPM, PRINCE2, or AACE (CCP, PSP) is a plus.",
+  //   ],
+  //   postedDate: "2024-01-15",
+  // },
 ];
 
 export default async function CareersPage() {
@@ -216,7 +221,7 @@ export default async function CareersPage() {
               />
               {/* <div className="absolute inset-0 bg-black/60 z-10" /> */}
               <div className="relative z-20 text-center px-6">
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug">
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-snug mt-16">
                  Join Our <span className="text-yellow-400">Team</span> 
                 </h1>
                 {/* <p className="text-lg md:text-xl text-yellow-200">
@@ -224,7 +229,7 @@ export default async function CareersPage() {
                 </p> */}
               </div>
             </section>
-              <section className="max-w-6xl mx-auto py-16 px-6">
+              <section className="container mx-auto py-16 px-6">
                     <header className="mb-12 text-center">
   <div className="relative inline-block text-center">
     <h2 className="text-3xl sm:text-5xl font-bold text-white pb-5">
@@ -251,7 +256,7 @@ Career <span className="text-yellow-400">Empowerment</span>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             🏗️ Build Your Career on Solid Ground
           </h2>
-          <p className="text-white text-xl leading-relaxed">
+          <p className="text-white text-xl leading-relaxed text-justify">
             Join a team where your skills shape skylines, and your future is built with purpose.
             At Calm Stone, we don’t just construct edifices — we shape careers. Whether you're on-site,
             in the office, or leading a project, you’ll be part of a company that values hands-on
@@ -267,7 +272,7 @@ Career <span className="text-yellow-400">Empowerment</span>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             🌟 Life at Calm Stone
           </h2>
-          <p className="text-white text-xl leading-relaxed">
+          <p className="text-white text-xl leading-relaxed text-justify">
             Working at Calm Stone means joining a family that truly values safety, respect, and collaboration.
             Our team thrives in a supportive environment where fresh ideas are encouraged, achievements are celebrated,
             and challenges are tackled together. We foster a culture of continuous learning, empowering everyone to bring
@@ -280,11 +285,11 @@ Career <span className="text-yellow-400">Empowerment</span>
         {/* Bottom-right Image */}
         <div>
           <Image
-            src="/images/team.jpg" // replace with your image
+            src="/team3.jpg" // replace with your image
             alt="Life at Calm Stone"
             width={600}
             height={400}
-            className="w-full h-auto object-cover rounded-lg"
+            className="w-full h-auto object-cover rounded-lg hidden sm:block"
           />
         </div>
       </div>
@@ -294,7 +299,7 @@ Career <span className="text-yellow-400">Empowerment</span>
         {/* Left Image */}
         <div>
           <Image
-            src="/images/team.jpg" // replace with your image
+            src="/team2.jpg" // replace with your image
             alt="Why Join Calm Stone"
             width={600}
             height={400}
@@ -307,7 +312,7 @@ Career <span className="text-yellow-400">Empowerment</span>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             🧱 Why Join Calm Stone?
           </h2>
-          <p className="text-white text-xl leading-relaxed">
+          <p className="text-white text-xl leading-relaxed text-justify">
             At Calm Stone, we don’t just offer jobs — we build careers that grow with you. Whether you’re starting as a
             junior or stepping into leadership, you’ll join a team that values dedication, skill, and innovation.
             Our diverse and challenging projects reflect the passion and talent of the people behind them. We foster a

@@ -14,32 +14,47 @@ const megaMenus = {
           label: "Oilfield Surface Construction",
           href: "/construction",
           subpoints: [
-            "Civil & Structural Works",
-            "Mechanical & Piping Works",
-            "Electrical & Instrumentation Works",
+            "Civil & Structural",
+            "Mechanical & Piping",
+            "Electrical & Instrumentation",
             "Equipment Installation",
-            "High-Density Polyethylene (HDPE) Internal Lining for existing or new Carbon Steel Pipelines",
-            "Fusion Bonded Epoxy (FBE) and Liquid Epoxy Internal Coating for new Carbon Steel Pipelines",
+            "High-Density Polyethylene (HDPE)",
+            "Fusion Bonded Epoxy (FBE)",
           ],
         },
-        { label: "Technical Consulting", href: "/consultation", subpoints: [] },
-        { label: "Material and Equipment Supply", href: "/equipment", subpoints: [] },
+        { label: "Technical Consulting",
+          href: "/consultation", 
+          subpoints: [
+            "Enginneering & Design",
+            "HSE Safety Assessments",
+            "Engineering Manpower Support",
+            "Digital Oilfield",
+            "Control system services",
+          ] 
+        },
+        { label: "Material and Equipment Supply", 
+          href: "/equipment", 
+          subpoints: [
+            "Control systems Supply",
+            "Piping Bulk Material",
+            "Electrical & Instrumentation Bulk Material", 
+          ] },
       ],
     },
   },
 
-  Projects: {
-    columns: {
-      Projects: [
-        { label: "Qusahwira production Facilities Upgrade", href: "/quswahira-upgrade" },
-        { label: "Engineering Services", href: "/engineering-service" },
-        { label: "Services for SPEL Job", href: "/spel" },
-        { label: "Documents for MTO and BOQ for LZ LTDP 1", href: "/mto" },
-        { label: "HDPE Internal Lining Service", href: "/hdpe" },
-        { label: "Desa Linated Water Impulsion System Bypass", href: "/desa" },
-      ],
-    },
-  },
+  // Projects: {
+  //   columns: {
+  //     Projects: [
+  //       { label: "Qusahwira production Facilities Upgrade", href: "/quswahira-upgrade" },
+  //       { label: "Engineering Services", href: "/engineering-service" },
+  //       { label: "Services for SPEL Job", href: "/spel" },
+  //       { label: "Documents for MTO and BOQ for LZ LTDP 1", href: "/mto" },
+  //       { label: "HDPE Internal Lining Service", href: "/hdpe" },
+  //       { label: "Desa Linated Water Impulsion System Bypass", href: "/desa" },
+  //     ],
+  //   },
+  // },
 };
 
 const Header = () => {
@@ -53,11 +68,11 @@ const Header = () => {
   const scrollDir = useScrollDirection();
   const links = Object.keys(megaMenus);
 
-  const isWhiteHeader = isHeaderHovered || openMenu || isMobileOpen || isPastHero;
+  const isWhiteHeader =  openMenu || isMobileOpen || isPastHero;
   const showNav = scrollDir === "up" || openMenu || isMobileOpen;
 
   const headerClasses = [
-    "fixed inset-x-0 top-0 z-50 transition-transform duration-300 hover:bg-white/95",
+    "fixed inset-x-0 top-0 z-50 transition-transform duration-300 ",//hover:bg-white/95
     !showNav && "-translate-y-full",
     (isPastHero || openMenu || isMobileOpen) && "backdrop-blur-md border-b border-gray-200 shadow-sm",
   ]
@@ -97,7 +112,7 @@ const Header = () => {
           <Link
             href="/aboutus"
             className={`font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase hover:text-yellow-400  ${
-              isWhiteHeader ? "text-black hover:text-black" : "text-white hover:text-black"
+              isWhiteHeader ? "text-black hover:text-black" : "text-white hover:text-white"
             }`}
           >
             About Us
@@ -116,7 +131,7 @@ const Header = () => {
               </button>
 
               {openMenu === menu && (
-                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 border-t-4 border-t-amber-400 p-4 z-50 w-80">
+                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 border-t-4 border-t-amber-400 p-4 z-50 w-96 ">
                   <ul className="space-y-4">
                     {Object.entries(megaMenus[menu].columns).map(([cat, items]) =>
                       items.map(({ label, href, subpoints }) => (
@@ -162,6 +177,14 @@ const Header = () => {
           ))}
 
           <Link
+            href="/projects"
+            className={`font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase hover:text-yellow-400  ${
+              isWhiteHeader ? "text-black hover:text-black" : "text-white hover:text-white"
+            }`}
+          >
+            Projects
+          </Link>
+          <Link
             href="/careers"
             className={`font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase hover:text-yellow-400  ${
               isWhiteHeader ? "text-black hover:text-black" : "text-white hover:text-white"
@@ -195,7 +218,7 @@ const Header = () => {
               <div key={menu} className="mb-4">
                 <button
                   onClick={() => toggleMobileSubmenu(menu)}
-                  className="w-full flex items-center justify-between text-black font-medium py-3"
+                  className="w-full flex items-center justify-between text-black font-medium "
                 >
                   {menu}
                   <ChevronDown
@@ -243,7 +266,7 @@ const Header = () => {
               href="/contact"
               className="block bg-yellow-400 text-black text-center py-2 rounded-lg font-semibold hover:bg-yellow-500 mt-6"
             >
-              Let's Build Together
+              Let's Connect
             </Link>
           </div>
         </div>

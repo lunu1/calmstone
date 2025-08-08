@@ -43,8 +43,8 @@ export default function LZLTDPMTOBOQ() {
               <p className="text-xl font-semibold text-amber-600">Lower Zakum Field, Offshore UAE</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Project</h3>
-              <p className="text-xl font-semibold text-amber-600">LZ LTDP 1</p>
+              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">YEAR</h3>
+              <p className="text-xl font-semibold text-amber-600">-</p>
             </div>
             <div>
               <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Client</h3>

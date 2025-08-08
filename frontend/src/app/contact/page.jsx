@@ -42,13 +42,13 @@ const ContactPage = () => {
               <p className="text-gray-600 text-lg">dcc@calmstonegc.com</p>
             </div>
           </div>
-          <div className="flex items-start space-x-4">
+          {/* <div className="flex items-start space-x-4">
             <Phone className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Phone</h4>
-              <p className="text-gray-600 text-lg">+971 44 561872</p>
+              <p className="text-gray-600 text-lg">xxxxxxxxx</p>
             </div>
-          </div>
+          </div> */}
           <div className="flex items-start space-x-4">
             <MapPin className="w-6 h-6 text-[#facc15] mt-1" />
             <div>

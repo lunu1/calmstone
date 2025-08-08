@@ -11,23 +11,94 @@ export default function OilfieldSurfaceConstruction() {
 
 const sections = [
   {
-    id: "technical-consulting",
-    title: "Technical Consulting",
-    image: "/design.jpg", 
+    id: "engineering-design",
+    title: "Engineering & Design",
+    image: "/images/engineering.jpg",
     intro:
-      "We provide comprehensive technical consulting services to enhance the operational efficiency and safety of your systems.",
+      "The scope of technical consulting in engineering and designing involves providing expert guidance, technical expertise, and comprehensive solutions throughout the lifecycle of a project. This includes the conceptual, basic, and detailed engineering stages.",
     scope: [
-      "Engineering & Design",
-      "Safety Assessments: HSE Services",
-      "Engineering Manpower Services",
-      "Digital Oilfield",
-      "Control System Services: Site services for ICSS, Integrated Control and Safety System, DCS, SIS, and F&G detection systems",
-      
+      "Conduct feasibility studies, technical evaluations, and site assessments",
+      "Develop conceptual, FEED, and detailed engineering designs",
+      "Prepare design basis, project specifications, and engineering deliverables",
+      "Create PFDs, P&IDs, GA drawings, and 3D modeling",
+      "Ensure compliance with industry standards and client requirements",
+      "Provide technical support during procurement and vendor evaluations",
+      "Review and validate subcontractor designs and resolve technical queries",
+      "Support construction, commissioning, and preparation of as-built documentation",
     ],
     conclusion:
-      "Our technical consulting services are designed to ensure that all aspects of your project, from design to safety and operations, are expertly managed.",
+      "Our engineering and design consulting ensures precision, innovation, and alignment with client expectations at every project stage.",
+  },
+  {
+    id: "safety-assessments",
+    title: "Safety Assessments (HSE Services)",
+    image: "/images/hse.jpg",
+    intro:
+      "HSE (Health, Safety & Environment) services focus on identifying, evaluating, and mitigating risks to ensure a safe and compliant work environment throughout the project lifecycle. These services are essential to protect people, assets, and the environment.",
+    scope: [
+      "Hazard Identification & Risk Assessment (HIRA)",
+      "HSE Compliance Audits & Gap Analysis",
+      "Development of HSE Plans & Procedures",
+      "Safety in Design Reviews",
+      "Construction Safety Supervision & Monitoring",
+      "Incident Investigation & Reporting",
+    ],
+    conclusion:
+      "Our comprehensive HSE services foster a culture of safety and ensure adherence to international safety standards across all operations.",
+  },
+  {
+    id: "engineering-manpower",
+    title: "Engineering Manpower Services",
+    image: "/images/manpower.jpg",
+    intro:
+      "Engineering manpower services involve the deployment of qualified technical professionals to support clients across various project phases—from design and planning to execution and commissioning. These services ensure flexibility, expertise, and efficiency in managing engineering workloads.",
+    scope: [
+      "Provision of Qualified Engineers & Technical Staff",
+      "Support Across Project Phases",
+      "On-site and Off-site Resource Deployment",
+      "Multi-discipline Engineering Expertise",
+      "Short-term & Long-term Staffing Solutions",
+      "Compliance with Project and HSE Requirements",
+    ],
+    conclusion:
+      "We empower your projects with top-tier engineering talent tailored to meet evolving technical and operational demands.",
+  },
+  {
+    id: "digital-oilfield",
+    title: "Digital Oilfield",
+    image: "/images/digital-oilfield.jpg",
+    intro:
+      "A Digital Oilfield integrates advanced digital technologies into oil and gas operations to enhance efficiency, safety, and decision-making. For a construction-focused company, digital oilfield solutions support real-time data management, remote monitoring, smart construction, and better project control across upstream and midstream infrastructure development.",
+    scope: [
+      "Real-Time Data Acquisition & Monitoring",
+      "Digital Twin for Facilities & Construction",
+      "Remote Site Monitoring & Control",
+      "Integrated Project Management Dashboards",
+      "Predictive Maintenance & Asset Integrity Management",
+      "HSE Digitization & Compliance Tracking",
+    ],
+    conclusion:
+      "Our digital oilfield solutions modernize operations, improve safety, and provide data-driven insights for superior project delivery.",
+  },
+  {
+    id: "control-system-services",
+    title: "Control System Services",
+    image: "/images/control-systems.jpg",
+    intro:
+      "Control System Services involve the design, integration, commissioning, and maintenance of automated systems that monitor and control industrial processes. These services ensure safe, efficient, and reliable plant operations by utilizing advanced instrumentation, PLCs, SCADA, and DCS technologies.",
+    scope: [
+      "Design & Engineering of Control Systems",
+      "PLC/DCS Programming & Configuration",
+      "Instrumentation Integration & Loop Checking",
+      "Control Panel Design, Assembly & Testing",
+      "Installation, Commissioning & Start-Up Support",
+      "System Upgrades, Troubleshooting & Maintenance",
+    ],
+    conclusion:
+      "We deliver tailored control system solutions to enhance automation, optimize performance, and ensure system reliability.",
   },
 ];
+
 
 
   useEffect(() => {

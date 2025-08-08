@@ -15,7 +15,7 @@ export default function OilfieldSurfaceConstruction() {
 const sections = [
    {
      id: "civil-structural",
-     title: "Civil & Structural Works",
+     title: "Civil & Structural",
      image: "/images/civil.jpg",
      intro:
        "At Calm Stone, we specialize in delivering end-to-end civil and structural solutions that ensure strength, stability, and longevity for every project.",
@@ -35,7 +35,7 @@ const sections = [
    },
    {
      id: "mechanical-piping",
-     title: "Mechanical & Piping Works",
+     title: "Mechanical & Piping",
      image: "/images/mechanical.jpg",
      intro:
        "Calm Stone provides comprehensive mechanical and piping services to meet the needs of industrial, infrastructure, and oil & gas projects.",
@@ -51,7 +51,7 @@ const sections = [
    },
    {
      id: "electrical-instrumentation",
-     title: "Electrical & Instrumentation Works",
+     title: "Electrical & Instrumentation",
      image: "/images/electrical.jpg",
      intro:
        "Our Electrical & Instrumentation team provides integrated solutions for industrial facilities, ensuring safe and efficient electrical systems combined with advanced instrumentation controls.",
@@ -82,7 +82,7 @@ const sections = [
    {
      id: "hdpe-lining",
      title:
-       "High-Density Polyethylene (HDPE) Internal Lining for Carbon Steel Pipelines",
+       "High-Density Polyethylene (HDPE)",
      image: "/images/hdpe.jpg",
      intro:
        "We provide specialized HDPE internal lining solutions for new and existing carbon steel pipelines, ensuring corrosion protection and extended pipeline life.",
@@ -96,7 +96,7 @@ const sections = [
    },
    {
      id: "fusion-bonded-epoxy",
-     title: "Fusion Bonded Epoxy (FBE) and Liquid Epoxy Internal Coating",
+     title: "Fusion Bonded Epoxy (FBE)",
      image: "/images/fbe.jpg",
      intro:
        "Calm Stone offers advanced internal coating solutions using Fusion Bonded Epoxy (FBE) and Liquid Epoxy for carbon steel pipelines, improving corrosion resistance and durability.",
@@ -110,7 +110,7 @@ const sections = [
    },
    {
      id: "specialized-works",
-     title: "Specialized Works",
+     title: "Specialized",
      image: "/images/special.jpg",
      intro:
        "In addition to our core offerings, we provide specialized works tailored to the unique needs of oilfield and industrial projects.",

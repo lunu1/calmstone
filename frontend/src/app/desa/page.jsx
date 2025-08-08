@@ -36,7 +36,22 @@ export default function LZLTDPMTOBOQ() {
 
       {/* Project Overview */}
       <section className="bg-white text-gray-800 py-16 px-6 md:px-20">
+        
         <div className="max-w-6xl mx-auto">
+             <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+            <div>
+              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</h3>
+              <p className="text-xl font-semibold text-amber-600">-</p>
+            </div>
+            <div>
+              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">YEAR</h3>
+              <p className="text-xl font-semibold text-amber-600">-</p>
+            </div>
+            <div>
+              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Client</h3>
+              <p className="text-xl font-semibold text-amber-600">ADNOC</p>
+            </div>
+          </div>
           {/* Project Info Block */}
           <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
 {/*        
