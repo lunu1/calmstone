@@ -22,9 +22,15 @@ const shareTechMono = Share_Tech_Mono({
 });
 
 export const metadata = {
-  title: "My Business Site",
-  description: "Powered by Cormorant Garamond",
+  title: "CSGC – Calm Stone General Contracting",
+  description: "Calm Stone General Contracting delivers quality residential and commercial construction services.",
+  icons: {
+    icon: "/logo.png",           // main icon
+    shortcut: "/logo.png",       // shortcut icon
+    apple: "/logo.png",         // iOS homescreen
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
