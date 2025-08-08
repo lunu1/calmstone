@@ -64,13 +64,13 @@ const Header = () => {
   const [mobileExpandedMenu, setMobileExpandedMenu] = useState(null);
   const [isHeaderHovered, setIsHeaderHovered] = useState(false);
   const [isPastHero, setIsPastHero] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true); // NEW
 
   const scrollDir = useScrollDirection();
   const links = Object.keys(megaMenus);
 
   const isWhiteHeader =  openMenu || isMobileOpen || isPastHero;
-  const showNav = scrollDir === "up" || openMenu || isMobileOpen;
-
+const showNav = scrollDir === "up" || openMenu || isMobileOpen || isAtTop;
   const headerClasses = [
     "fixed inset-x-0 top-0 z-50 transition-transform duration-300 ",//hover:bg-white/95
     !showNav && "-translate-y-full",
@@ -79,11 +79,19 @@ const Header = () => {
     .filter(Boolean)
     .join(" ");
 
+
+
   useEffect(() => {
-    const onScroll = () => setIsPastHero(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const onScroll = () => {
+    const y = window.scrollY || 0;
+    setIsAtTop(y < 10);          // NEW
+    setIsPastHero(y > 50);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll(); // run once on mount so mobile shows at top
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
+
 
   const toggleDropdown = (menu) => setOpenMenu(openMenu === menu ? null : menu);
   const toggleSubDropdown = (label) => setOpenSubMenu(openSubMenu === label ? null : label);
@@ -214,6 +222,7 @@ const Header = () => {
       {isMobileOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="px-6 py-6">
+          
             {links.map((menu) => (
               <div key={menu} className="mb-4">
                 <button
@@ -228,6 +237,7 @@ const Header = () => {
                 </button>
                 {mobileExpandedMenu === menu && (
                   <div className="ml-4 mt-2 border-l border-gray-300 pl-4">
+                    
                     {Object.entries(megaMenus[menu].columns).map(([cat, items]) =>
                       items.map(({ label, href, subpoints }) => (
                         <div key={label} className="mb-2">
@@ -255,13 +265,17 @@ const Header = () => {
                 )}
               </div>
             ))}
-
+    
+            <Link href="/projects" className="block text-black font-medium py-3">
+              Projects
+            </Link>
+              <Link href="/aboutus" className="block text-black font-medium py-3">
+              About us
+            </Link>
             <Link href="/careers" className="block text-black font-medium py-3">
               Careers
             </Link>
-            <Link href="/aboutus" className="block text-black font-medium py-3">
-              About us
-            </Link>
+        
             <Link
               href="/contact"
               className="block bg-yellow-400 text-black text-center py-2 rounded-lg font-semibold hover:bg-yellow-500 mt-6"

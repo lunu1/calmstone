@@ -289,7 +289,7 @@ Career <span className="text-yellow-400">Empowerment</span>
             alt="Life at Calm Stone"
             width={600}
             height={400}
-            className="w-full h-auto object-cover rounded-lg hidden sm:block"
+            className="w-full h-auto object-cover rounded-lg "
           />
         </div>
       </div>
