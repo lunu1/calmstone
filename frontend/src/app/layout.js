@@ -4,6 +4,7 @@ import { Cormorant_Garamond,
 import "./globals.css";
 import LayoutWrapper from "../../components/LayoutWrapper";
 import SmallFooter from "../../components/Footer";
+import Header from "../../components/navbar";
 
 
 
@@ -36,7 +37,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={cormorant.variable}>
   <body className="font-primary antialiased">
-     <LayoutWrapper>{children}</LayoutWrapper>
+
+     <LayoutWrapper>
+            <Header />
+
+      {children}
+      </LayoutWrapper>
      <SmallFooter/>
   </body>
   

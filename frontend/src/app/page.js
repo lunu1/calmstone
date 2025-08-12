@@ -17,7 +17,6 @@ import HeroSlider from '../../components/HeroSlider'
 export default function Home() {
   return (
     <>
-      <Navbar />
       {/* <HeroSection /> */}
       <HeroSlider/>
  {/* <ScrollRevealText
@@ -32,7 +31,7 @@ export default function Home() {
             <SectorsSection />
       {/* <HeroScrollSlider/> */}
       <LogoMarque color="#bfa046" />
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
       
       <CertificationsSection/>
       <NewsCardSection/>

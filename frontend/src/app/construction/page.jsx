@@ -188,12 +188,12 @@ const sections = [
       </div>
 
       {/* ✅ Desktop Sidebar */}
-      <aside className="hidden lg:flex flex-col w-72 sticky top-0 h-screen bg-white shadow-xl z-50">
-        <div className="p-6 flex justify-center">
+      <aside className="hidden lg:flex flex-col w-72 sticky top-0 h-screen bg-white shadow-xl z-30">
+        {/* <div className="p-6 flex justify-center">
           <Logo />
-        </div>
+        </div> */}
         <nav className="flex-1 overflow-y-auto p-6 space-y-3">
-          <h3 className="text-xl font-semibold mb-4">Oilfield surface construction</h3>
+          <h3 className="text-xl font-semibold mb-4 mt-28">Oilfield surface construction</h3>
           {sections.map((sec) => (
             <a
               key={sec.id}

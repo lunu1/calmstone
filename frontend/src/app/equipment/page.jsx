@@ -116,11 +116,11 @@ const sections = [
       </div>
 
       {/* ✅ Desktop Sidebar */}
-      <aside className="hidden lg:flex flex-col w-72 sticky top-0 h-screen bg-white shadow-xl z-50">
-        <div className="p-6 flex justify-center">
+      <aside className="hidden lg:flex flex-col w-72 sticky top-0 h-screen bg-white shadow-xl z-30">
+        {/* <div className="p-6 flex justify-center">
           <Logo />
-        </div>
-        <nav className="flex-1 overflow-y-auto p-6 space-y-3">
+        </div> */}
+        <nav className="flex-1 overflow-y-auto p-6 space-y-3 mt-28">
           <h3 className="text-xl font-semibold mb-4">Material and equipment Supply</h3>
           {sections.map((sec) => (
             <a
@@ -177,7 +177,7 @@ const sections = [
       )}
 
       {/* ✅ Main Content */}
-      <section className="flex-1 pb-20 pt-16 lg:pt-0">
+      <section className="flex-1 pb-20 pt-16 lg:pt-10">
         {sections.map((sec, index) => (
           <motion.div
             key={sec.id}

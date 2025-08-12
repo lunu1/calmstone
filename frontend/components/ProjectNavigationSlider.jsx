@@ -229,7 +229,7 @@ export default function ProjectNavigationSlider() {
                          bg-clip-text text-transparent">
             Our Projects
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-black max-w-2xl mx-auto">
             Discover our most innovative and impactful projects that shape the future
           </p>
         </div>

@@ -47,21 +47,21 @@ const Overview = () => {
 
           <motion.p
             variants={textVariants}
-            className="text-base sm:text-lg md:text-[26px] leading-relaxed text-black mb-6 text-justify"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-justify"
           >
             Calm Stone is a comprehensive construction company offering integrated solutions across civil, structural, process piping, electrical and instrumentation, and industrial coating works. We are committed to delivering high-quality, safe, and innovative services that meet the evolving needs of our clients across both greenfield and brownfield projects.
           </motion.p>
 
           <motion.p
             variants={textVariants}
-            className="text-base sm:text-lg md:text-[26px] leading-relaxed text-black mb-6 text-justify"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-justify"
           >
             Our experience spans a wide range of industries, and our capabilities include advanced materials and technologies such as HDPE (High-Density Polyethylene) systems and FBE (Fusion Bonded Epoxy) coatings. With a highly skilled and dedicated workforce, we handle every stage of the project lifecycle — from design and planning to execution and delivery — ensuring timely and cost-effective results.
           </motion.p>
 
           <motion.p
             variants={textVariants}
-            className="text-base sm:text-lg md:text-[26px] leading-relaxed text-black mb-6 text-justify"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-justify"
           >
             At Calm Stone, we take pride in our ability to consistently exceed expectations, building lasting partnerships through trust, performance, and excellence.
           </motion.p>
@@ -88,7 +88,7 @@ const Overview = () => {
 
           <motion.p
             variants={textVariants}
-            className="text-base sm:text-lg md:text-[26px] leading-relaxed text-black mb-6 text-center"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-center"
           >
             To redefine excellence in EPC by delivering smart, agile, and trusted solutions that drive progress in the evolving energy sector.
           </motion.p>
@@ -115,7 +115,7 @@ const Overview = () => {
 
           <motion.p
             variants={textVariants}
-            className="text-base sm:text-lg md:text-[26px] leading-relaxed text-black mb-6 text-center"
+            className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-center"
           >
             To emerge as a new-generation EPC leader, building sustainable energy infrastructure that drives progress and inspires confidence worldwide.
           </motion.p>

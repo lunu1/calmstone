@@ -70,7 +70,7 @@ const AboutPage = () => {
               className="inline-block mb-3"
             >
               <div className="relative inline-block text-center">
-                <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 pb-5 uppercase">
+                <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 pb-5 mt-7 uppercase">
                   About <span className="text-yellow-400">Us</span>  
                 </h2>
                 <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />

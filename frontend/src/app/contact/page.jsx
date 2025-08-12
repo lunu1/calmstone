@@ -15,7 +15,7 @@ const ContactPage = () => {
         className="text-center mb-16"
       >
           <div className="relative inline-block mb-10 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 pb-5">
+        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 pb-5 mt-10">
          GET IN TOUCH WITH US
         </h2>
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
