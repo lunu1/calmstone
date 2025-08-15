@@ -9,11 +9,11 @@ const newsData = [
     summary:
       "Global oil prices have entered a volatile phase, impacted by weakening demand and increasing supply...",
     content: `
-Global oil prices have entered a volatile phase, impacted by weakening demand and increasing supply. Following a brief rise above $80 per barrel in mid-June—largely attributed to geopolitical concerns—Brent crude has since declined significantly, falling to $67.76. The September contract now trades near $66.97, while U.S. West Texas Intermediate (WTI) has dropped to $65.61, marking the steepest weekly decline since the pandemic-era lows of 2020.
+Global oil prices have entered a volatile phase, impacted by weakening demand and increasing supply. Following a brief rise above $80 per barrel in mid-June largely attributed to geopolitical concerns Brent crude has since declined significantly, falling to $67.76. The September contract now trades near $66.97, while U.S. West Texas Intermediate (WTI) has dropped to $65.61, marking the steepest weekly decline since the pandemic-era lows of 2020.
 
 This downturn reflects shifting market fundamentals as supply outpaces demand. The OPEC+ alliance, led by Saudi Arabia and Russia, is expected to implement another production increase in August. A proposed 411,000-barrel-per-day rise will be discussed during the upcoming July 6 meeting, forming part of a broader strategy to gradually reverse nearly 1 million barrels per day of voluntary cuts introduced earlier this year.
 
-Adding to supply pressures, several producers—including Kazakhstan—have exceeded their assigned output quotas. Kazakhstan’s Tengiz field, bolstered by recent infrastructure expansions, has reached record production levels, contributing to concerns about swelling global inventories.
+Adding to supply pressures, several producers including Kazakhstan have exceeded their assigned output quotas. Kazakhstan’s Tengiz field, bolstered by recent infrastructure expansions, has reached record production levels, contributing to concerns about swelling global inventories.
 
 Analysts suggest that without a significant shift in policy or a major supply disruption, oil prices may remain under pressure throughout the second half of 2025. Rising stockpiles and slowing economic activity in key markets are making it increasingly difficult for prices to stabilize above the $70 threshold.
 
@@ -31,7 +31,7 @@ At a time when energy markets remain highly sensitive to both macroeconomic tren
     content: `
 India has kicked off one of the world’s largest offshore oil and gas exploration efforts through the Open Acreage Licensing Programme (OALP) Round X, offering more than 2.5 lakh square kilometers of offshore, deepwater, and onshore blocks for bidding. This bold move aims to boost domestic energy production, reduce import dependence, and attract global investment.
 
-Significant reforms have removed nearly all previous restrictions, opening up 99% of offshore zones to exploration. India is also partnering with international experts, notably from Norway, to develop a robust deepwater exploration and production ecosystem—covering drilling technology, subsea systems, and digital monitoring.
+Significant reforms have removed nearly all previous restrictions, opening up 99% of offshore zones to exploration. India is also partnering with international experts, notably from Norway, to develop a robust deepwater exploration and production ecosystem covering drilling technology, subsea systems, and digital monitoring.
 
 The government is inviting stakeholder feedback on draft contracts until July 17, 2025, with bidding results expected later this year. This initiative marks a major step toward strengthening India’s energy security and fostering innovation in offshore oil and gas development.
     `,

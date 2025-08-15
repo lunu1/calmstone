@@ -5,7 +5,7 @@ import Link from "next/link";
 import JobCard from "./JobCard";
 import Testimonials from "../../../components/Testimonials";
 
-export const metadata = { title: "Careers – Join Our Energy Team" };
+export const metadata = { title: "Careers  Join Our Energy Team" };
 
 /* -------------------------------------------------------------------------- */
 /*                               Dummy job data                               */
@@ -258,7 +258,7 @@ Career <span className="text-yellow-400">Empowerment</span>
           </h2>
           <p className="text-white text-xl leading-relaxed text-justify">
             Join a team where your skills shape skylines, and your future is built with purpose.
-            At Calm Stone, we don’t just construct edifices — we shape careers. Whether you're on-site,
+            At Calm Stone, we don’t just construct edifices we shape careers. Whether you're on-site,
             in the office, or leading a project, you’ll be part of a company that values hands-on
             experience, fresh ideas, and real dedication. We believe empowered people build stronger
             projects, which is why we invest in your growth from day one. With every structure we build,
@@ -276,7 +276,7 @@ Career <span className="text-yellow-400">Empowerment</span>
             Working at Calm Stone means joining a family that truly values safety, respect, and collaboration.
             Our team thrives in a supportive environment where fresh ideas are encouraged, achievements are celebrated,
             and challenges are tackled together. We foster a culture of continuous learning, empowering everyone to bring
-            their best every day. Your growth is our priority — we invest in hands-on training, certification support,
+            their best every day. Your growth is our priority  we invest in hands-on training, certification support,
             and clear career advancement pathways. At Calm Stone, promotions are earned through performance, passion,
             and potential. From day one, you’ll have a clear roadmap for success and a team that supports you at every step.
           </p>
@@ -313,10 +313,10 @@ Career <span className="text-yellow-400">Empowerment</span>
             🧱 Why Join Calm Stone?
           </h2>
           <p className="text-white text-xl leading-relaxed text-justify">
-            At Calm Stone, we don’t just offer jobs — we build careers that grow with you. Whether you’re starting as a
+            At Calm Stone, we don’t just offer jobs  we build careers that grow with you. Whether you’re starting as a
             junior or stepping into leadership, you’ll join a team that values dedication, skill, and innovation.
             Our diverse and challenging projects reflect the passion and talent of the people behind them. We foster a
-            culture of trust, teamwork, and accountability — empowering every team member on-site and off. Here, safety
+            culture of trust, teamwork, and accountability  empowering every team member on-site and off. Here, safety
             is paramount, efforts are recognized, and every voice matters. We don’t micromanage; we mentor.
             We don’t follow trends; we build them.
           </p>
@@ -362,7 +362,7 @@ Career <span className="text-yellow-400">Empowerment</span>
                   No roles available
                 </h3>
                 <p className="mb-6 text-gray-400">
-                  We’re growing fast—check back soon or reach out!
+                  We’re growing fast check back soon or reach out!
                 </p>
                 <Link
                   href="#"

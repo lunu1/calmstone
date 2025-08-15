@@ -111,7 +111,7 @@ const HeroSection = ({ withOffset = true }) => {
                   Energy Infrastructure
                 </h2>
                 <p className="text-xl md:text-2xl opacity-90 mb-12">
-                  Smart EPC solutions, global expertise, and real-world execution — built for tomorrow.
+                  Smart EPC solutions, global expertise, and real-world execution  built for tomorrow.
                 </p>
                 {/* <button
                   type="button"

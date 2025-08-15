@@ -56,7 +56,7 @@ export default function EngineeringService() {
           <div className="space-y-8 text-base md:text-lg leading-relaxed text-gray-700">
             <p>
               For Orlen Lietuva’s Mažeikiai refinery, Calm Stone executed balance piping design across ISBL and OSBL
-              areas—producing routing drawings, P&IDs, instrumentation diagrams, structural support details, technical
+              areas producing routing drawings, P&IDs, instrumentation diagrams, structural support details, technical
               datasheets, and full MTO/BOQ sets.
             </p>
             <p>

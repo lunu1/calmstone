@@ -11,7 +11,7 @@ const accordionData = [
   {
     title: "Mission",
     content:
-      "To redefine excellence in EPC by delivering smart, agile, and trusted solutions that drive progress in the evolving energy sector. We are powered by innovation, guided by precision, and driven by a commitment to speed, safety, and lasting value—for every client, every time.",
+      "To redefine excellence in EPC by delivering smart, agile, and trusted solutions that drive progress in the evolving energy sector. We are powered by innovation, guided by precision, and driven by a commitment to speed, safety, and lasting value for every client, every time.",
     icon: Target,
   },
   {
@@ -33,7 +33,7 @@ const features = [
     icon: Award,
     title: "Quality and Commitment",
     content:
-      "Quality is at the core of everything we do. With world-class engineering and timely execution, every project meets or exceeds global standards—backed by a multidisciplinary team and a customer-first mindset.",
+      "Quality is at the core of everything we do. With world-class engineering and timely execution, every project meets or exceeds global standards backed by a multidisciplinary team and a customer-first mindset.",
   },
   {
     icon: Zap,
@@ -170,7 +170,7 @@ const AboutPage = () => {
       }, {
         icon: Eye,
         title: "Vision Statement",
-        desc: "At Calm Stone General Contracting, our vision is to emerge as a new-generation leader in Engineering, Procurement, and Construction (EPC)—one that pioneers the development of sustainable, resilient, and future-ready energy infrastructure. We aim to be a trusted partner that not only delivers excellence in every project but also inspires confidence, drives innovation, and contributes meaningfully to global energy transformation. By embracing technology, fostering talent, and upholding our core values, we aspire to shape a smarter, safer, and more sustainable world."
+        desc: "At Calm Stone General Contracting, our vision is to emerge as a new-generation leader in Engineering, Procurement, and Construction (EPC) one that pioneers the development of sustainable, resilient, and future-ready energy infrastructure. We aim to be a trusted partner that not only delivers excellence in every project but also inspires confidence, drives innovation, and contributes meaningfully to global energy transformation. By embracing technology, fostering talent, and upholding our core values, we aspire to shape a smarter, safer, and more sustainable world."
       }].map((item, idx) => (
         <motion.div
           key={idx}
@@ -208,13 +208,13 @@ const AboutPage = () => {
 Our Culture of Purpose and Responsibility
       </h3>
       <p className="text-gray-700 text-lg leading-relaxed">
-At Calm Stone, our corporate culture is built on a foundation of integrity, respect, and excellence. We foster a workplace where collaboration, inclusivity, and innovation thrive—empowering our people to lead with purpose and deliver with pride.
-Our core values—honesty, quality, safety, and sustainability—guide everything we do. They shape our decisions, drive our performance, and define the relationships we build with clients, partners, and communities.
+At Calm Stone, our corporate culture is built on a foundation of integrity, respect, and excellence. We foster a workplace where collaboration, inclusivity, and innovation thrive empowering our people to lead with purpose and deliver with pride.
+Our core values honesty, quality, safety, and sustainability guide everything we do. They shape our decisions, drive our performance, and define the relationships we build with clients, partners, and communities.
       </p>
       <p>
         Health, Safety, and Environmental (HSE) stewardship is at the heart of our operations. We uphold the highest standards of safety across all sites and processes, ensuring the wellbeing of our workforce and minimizing our impact on the environment.
 Beyond our projects, we believe in creating lasting value for society. Through community engagement and initiatives focused on education, environmental care, and social upliftment, we are committed to making a positive difference wherever we work.
-This is the spirit that drives us—a culture rooted in responsibility and inspired by impact.
+This is the spirit that drives us a culture rooted in responsibility and inspired by impact.
       </p>
     </motion.div>
   </motion.div>

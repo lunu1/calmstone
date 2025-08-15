@@ -89,6 +89,40 @@ const Header = () => {
   const toggleMobileSubmenu = (menu) =>
     setMobileExpandedMenu(mobileExpandedMenu === menu ? null : menu);
 
+  // Close dropdown on outside click / Escape / scroll
+  useEffect(() => {
+    const handleDocClick = (e) => {
+      const inDropdown = e.target.closest(".mega-dropdown");
+      const inTrigger = e.target.closest(".mega-trigger");
+      if (!inDropdown && !inTrigger) {
+        setOpenMenu(null);
+        setOpenSubMenu(null);
+      }
+    };
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setOpenMenu(null);
+        setOpenSubMenu(null);
+      }
+    };
+
+    const handleScroll = () => {
+      setOpenMenu(null);
+      setOpenSubMenu(null);
+    };
+
+    document.addEventListener("mousedown", handleDocClick);
+    document.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      document.removeEventListener("mousedown", handleDocClick);
+      document.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header
       ref={headerRef}
@@ -96,7 +130,7 @@ const Header = () => {
     >
       <nav className="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/">
+        <Link href="/" onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}>
           <Image
             src="/logo.png"
             alt="calm stone"
@@ -111,12 +145,14 @@ const Header = () => {
         <div className="hidden lg:flex items-center gap-10">
           <Link
             href="/"
+            onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
             className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
           >
             Home
           </Link>
           <Link
             href="/aboutus"
+            onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
             className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
           >
             About Us
@@ -125,60 +161,59 @@ const Header = () => {
           {links.map((menu) => (
             <div key={menu} className="relative">
               <button
-                onClick={() => toggleDropdown(menu)}
-                className="flex items-center gap-1 font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
+                onClick={() => {
+                  toggleDropdown(menu);
+                  // collapse any open sub when switching menus
+                  setOpenSubMenu(null);
+                }}
+                className="mega-trigger flex items-center gap-1 font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
               >
                 {menu}
                 <ChevronDown
                   size={18}
-                  className={`transition-transform ${
-                    openMenu === menu ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform ${openMenu === menu ? "rotate-180" : ""}`}
                 />
               </button>
 
               {openMenu === menu && (
-                <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 border-t-4 border-t-amber-400 p-4 z-50 w-96">
+                <div className="mega-dropdown absolute left-0 mt-2 bg-white shadow-lg rounded-lg border border-gray-200 border-t-4 border-t-amber-400 p-4 z-50 w-96">
                   <ul className="space-y-4">
-                    {Object.entries(megaMenus[menu].columns).map(
-                      ([cat, items]) =>
-                        items.map(({ label, href, subpoints }) => (
-                          <li key={label}>
-                            <div className="flex justify-between items-center">
-                              <Link
-                                href={href}
-                                className="hover:text-yellow-400 transition-colors duration-200 font-medium text-lg"
-                              >
-                                {label}
-                              </Link>
-                              {!!subpoints?.length && (
-                                <ChevronDown
-                                  size={25}
-                                  className={`cursor-pointer transition-transform ${
-                                    openSubMenu === label ? "rotate-180" : ""
-                                  }`}
-                                  onClick={() => toggleSubDropdown(label)}
-                                />
-                              )}
-                            </div>
-                            {openSubMenu === label && !!subpoints?.length && (
-                              <ul className="mt-2 ml-4 space-y-2 text-lg text-black">
-                                {subpoints.map((sp, idx) => (
-                                  <li key={idx}>
-                                    <Link
-                                      href={`${href}?subpoint=${encodeURIComponent(
-                                        sp
-                                      )}`}
-                                      className="hover:text-yellow-400"
-                                    >
-                                      • {sp}
-                                    </Link>
-                                  </li>
-                                ))}
-                              </ul>
+                    {Object.entries(megaMenus[menu].columns).map(([cat, items]) =>
+                      items.map(({ label, href, subpoints }) => (
+                        <li key={label}>
+                          <div className="flex justify-between items-center">
+                            <Link
+                              href={href}
+                              onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
+                              className="hover:text-yellow-400 transition-colors duration-200 font-medium text-lg"
+                            >
+                              {label}
+                            </Link>
+                            {!!subpoints?.length && (
+                              <ChevronDown
+                                size={25}
+                                className={`cursor-pointer transition-transform ${openSubMenu === label ? "rotate-180" : ""}`}
+                                onClick={() => toggleSubDropdown(label)}
+                              />
                             )}
-                          </li>
-                        ))
+                          </div>
+                          {openSubMenu === label && !!subpoints?.length && (
+                            <ul className="mt-2 ml-4 space-y-2 text-lg text-black">
+                              {subpoints.map((sp, idx) => (
+                                <li key={idx}>
+                                  <Link
+                                    href={`${href}?subpoint=${encodeURIComponent(sp)}`}
+                                    onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
+                                    className="hover:text-yellow-400"
+                                  >
+                                    • {sp}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                        </li>
+                      ))
                     )}
                   </ul>
                 </div>
@@ -188,6 +223,7 @@ const Header = () => {
 
           <Link
             href="/careers"
+            onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
             className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
           >
             Careers
@@ -198,6 +234,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <Link
             href="/contact"
+            onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
             className="text-black bg-yellow-400 px-6 py-3 rounded-lg font-semibold flex items-center gap-2 hover:bg-yellow-500 transition-all duration-200 hover:shadow-lg hover:shadow-yellow-500/20"
           >
             Let's connect <ArrowRight size={16} />
@@ -256,43 +293,38 @@ const Header = () => {
                 Services
                 <ChevronDown
                   size={16}
-                  className={`transform transition-transform ${
-                    mobileExpandedMenu === "Services" ? "rotate-180" : ""
-                  }`}
+                  className={`transform transition-transform ${mobileExpandedMenu === "Services" ? "rotate-180" : ""}`}
                 />
               </button>
               {mobileExpandedMenu === "Services" && (
                 <div className="ml-4 mt-2 border-l border-gray-300 pl-4">
-                  {Object.entries(megaMenus["Services"].columns).map(
-                    ([cat, items]) =>
-                      items.map(({ label, href, subpoints }) => (
-                        <div key={label} className="mb-2">
-                          <Link
-                            href={href}
-                            className="block font-semibold py-2"
-                            onClick={() => setIsMobileOpen(false)}
-                          >
-                            {label}
-                          </Link>
-                          {!!subpoints?.length && (
-                            <ul className="ml-3 mt-1 text-lg">
-                              {subpoints.map((sp, idx) => (
-                                <li key={idx} className="py-2">
-                                  <Link
-                                    href={`${href}?subpoint=${encodeURIComponent(
-                                      sp
-                                    )}`}
-                                    className="hover:text-yellow-400"
-                                    onClick={() => setIsMobileOpen(false)}
-                                  >
-                                    - {sp}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </div>
-                      ))
+                  {Object.entries(megaMenus["Services"].columns).map(([cat, items]) =>
+                    items.map(({ label, href, subpoints }) => (
+                      <div key={label} className="mb-2">
+                        <Link
+                          href={href}
+                          className="block font-semibold py-2"
+                          onClick={() => setIsMobileOpen(false)}
+                        >
+                          {label}
+                        </Link>
+                        {!!subpoints?.length && (
+                          <ul className="ml-3 mt-1 text-lg">
+                            {subpoints.map((sp, idx) => (
+                              <li key={idx} className="py-2">
+                                <Link
+                                  href={`${href}?subpoint=${encodeURIComponent(sp)}`}
+                                  className="hover:text-yellow-400"
+                                  onClick={() => setIsMobileOpen(false)}
+                                >
+                                  - {sp}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))
                   )}
                 </div>
               )}

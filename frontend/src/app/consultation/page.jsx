@@ -51,7 +51,7 @@ const sections = [
     title: "Engineering Manpower Services",
     image: "/images/manpower.jpg",
     intro:
-      "Engineering manpower services involve the deployment of qualified technical professionals to support clients across various project phases—from design and planning to execution and commissioning. These services ensure flexibility, expertise, and efficiency in managing engineering workloads.",
+      "Engineering manpower services involve the deployment of qualified technical professionals to support clients across various project phases from design and planning to execution and commissioning. These services ensure flexibility, expertise, and efficiency in managing engineering workloads.",
     scope: [
       "Provision of Qualified Engineers & Technical Staff",
       "Support Across Project Phases",

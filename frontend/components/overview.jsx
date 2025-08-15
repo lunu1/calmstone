@@ -56,7 +56,7 @@ const Overview = () => {
             variants={textVariants}
             className="text-base sm:text-lg md:text-xl leading-relaxed text-black mb-6 text-justify"
           >
-            Our experience spans a wide range of industries, and our capabilities include advanced materials and technologies such as HDPE (High-Density Polyethylene) systems and FBE (Fusion Bonded Epoxy) coatings. With a highly skilled and dedicated workforce, we handle every stage of the project lifecycle — from design and planning to execution and delivery — ensuring timely and cost-effective results.
+            Our experience spans a wide range of industries, and our capabilities include advanced materials and technologies such as HDPE (High-Density Polyethylene) systems and FBE (Fusion Bonded Epoxy) coatings. With a highly skilled and dedicated workforce, we handle every stage of the project lifecycle  from design and planning to execution and delivery ensuring timely and cost-effective results
           </motion.p>
 
           <motion.p

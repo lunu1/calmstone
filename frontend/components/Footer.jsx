@@ -14,7 +14,7 @@ const SmallFooter = () => {
           <div>
             <h3 className="text-4xl font-bold mb-6 text-yellow-400">Calm Stone</h3>
             <p className="text-white text-lg leading-relaxed">
-              Building tomorrow's solutions with today's innovation. From engineering excellence to reliable partnerships — Calm Stone leads the future.
+              Building tomorrow's solutions with today's innovation. From engineering excellence to reliable partnershipsCalm Stone leads the future.
             </p>
           </div>
 
@@ -80,8 +80,7 @@ const SmallFooter = () => {
                 <div>
                   <h4 className="text-lg font-semibold">Address</h4>
                   <p className="text-gray-400 text-base">
-                    Office M2020, M2 Bin Arar Holdings Building<br />
-                    Al Najda Street, Abu Dhabi
+                   No 504, SalamHQ Building, Al Zahiyah Zone, <br /> Abu Dhabi UAE
                   </p>
                 </div>
               </div>

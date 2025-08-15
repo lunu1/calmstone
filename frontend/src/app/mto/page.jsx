@@ -60,7 +60,7 @@ export default function LZLTDPMTOBOQ() {
               wellhead and flowline systems offshore.
             </p>
             <p>
-              The technical deliverables—including structural supports and instrumentation plans—served as critical
+              The technical deliverables including structural supports and instrumentation plans served as critical
               documentation for procurement and commissioning by ADNOC Offshore.
             </p>
           </div>
