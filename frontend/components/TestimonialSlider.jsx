@@ -17,12 +17,12 @@ export default function TestimonialSlider() {
         {/* Header */}
         <div className="text-center mb-16">
              <div className="relative inline-block mb-10 text-center">
-        <h2 className="text-[36px] md:text-[48px] font-bold text-gray-900 pb-5">
+        <h2 className="text-[36px] md:text-[48px] font-bold text-black pb-5">
           OUR PROJECTS 
         </h2>
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
       </div>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+          <p className="text-xl text-black max-w-2xl mx-auto">
             Discover our most innovative and impactful projects that shape the future
           </p>
         </div>
@@ -114,13 +114,13 @@ export default function TestimonialSlider() {
 
           {/* Navigation Buttons */}
           <button className="swiper-button-prev-custom absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 z-20
-                             group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-slate-700 hover:text-white
+                             group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-black hover:text-white
                              p-3 rounded-full border border-yellow-200/60 hover:border-amber-400/80 transition-all duration-300 
                              hover:shadow-xl hover:shadow-amber-300/25">
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
           </button>
           <button className="swiper-button-next-custom absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 z-20
-                             group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-slate-700 hover:text-white
+                             group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-black hover:text-white
                              p-3 rounded-full border border-yellow-200/60 hover:border-amber-400/80 transition-all duration-300 
                              hover:shadow-xl hover:shadow-amber-300/25">
             <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />

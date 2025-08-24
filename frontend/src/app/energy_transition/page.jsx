@@ -155,7 +155,7 @@ export default function EnergyTransitionPage() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Our Capabilities
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-black max-w-3xl mx-auto">
               Comprehensive solutions for your energy transition journey
             </p>
           </motion.div>
@@ -211,7 +211,7 @@ export default function EnergyTransitionPage() {
         
                 <div className="lg:w-1/2 w-full space-y-6 px-1">
                   <h3 className="text-3xl md:text-4xl font-bold">{title}</h3>
-                  <p className="text-lg leading-relaxed text-gray-700">
+                  <p className="text-lg leading-relaxed text-black">
                     {body}
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">

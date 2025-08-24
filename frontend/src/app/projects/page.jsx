@@ -67,7 +67,7 @@ export default function ProjectsPage() {
     <div className="w-full md:h-screen min-h-screen px-2 sm:px-4 md:px-10 py-6 md:py-10">
       <div className="flex justify-center mb-8 md:mb-10 relative">
         <div className="text-center relative">
-          <h2 className="text-[28px] md:text-[48px] font-bold text-gray-900 pb-5 uppercase pt-16 sm:pt-0">
+          <h2 className="text-[28px] md:text-[48px] font-bold text-black pb-5 uppercase pt-16 sm:pt-0">
             Projects and <span className="text-yellow-400"> updates </span>
           </h2>
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-24 md:w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />

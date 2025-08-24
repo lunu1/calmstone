@@ -28,7 +28,7 @@ export default function JobCard({ job }) {
           <div className="flex-1 space-y-4">
             {/* title */}
             <div>
-              <h2 className="text-2xl font-bold text-black group-hover:text-gray-800 transition-colors duration-300 tracking-tight">
+              <h2 className="text-2xl font-bold text-black group-hover:text-black transition-colors duration-300 tracking-tight">
                 {job.title}
               </h2>
 
@@ -72,7 +72,7 @@ export default function JobCard({ job }) {
               {/* optional link to detail page */}
               <button
                 onClick={openDetail}
-                className="text-base text-black underline-offset-2 hover:underline font-semibold hover:text-gray-800 transition-colors duration-300 bg-gradient-to-r from-amber-100/50 to-yellow-100/50 px-4 py-2 rounded-lg hover:from-amber-200/60 hover:to-yellow-200/60 border border-amber-200/50"
+                className="text-base text-black underline-offset-2 hover:underline font-semibold hover:text-black transition-colors duration-300 bg-gradient-to-r from-amber-100/50 to-yellow-100/50 px-4 py-2 rounded-lg hover:from-amber-200/60 hover:to-yellow-200/60 border border-amber-200/50"
               >
                 View details ✨
               </button>
@@ -114,7 +114,7 @@ export default function JobCard({ job }) {
               </h3>
               <button
                 onClick={closeDetail}
-                className="text-black hover:text-gray-700 text-3xl font-bold transition-colors duration-300 hover:scale-110 transform"
+                className="text-black hover:text-black text-3xl font-bold transition-colors duration-300 hover:scale-110 transform"
               >
                 ×
               </button>

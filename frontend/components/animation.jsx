@@ -56,7 +56,7 @@ export default function HeroScrollSlider() {
   /* ---- render ----------------------------------------------------------- */
   return (
     <section ref={wrapperRef} style={{ height: `${slides.length * 100}vh` }}>
-      <div className="relative sticky top-0 h-screen bg-white text-neutral-900">
+      <div className="relative sticky top-0 h-screen bg-white text-black">
         
         {/* Mobile Layout */}
         <div className="md:hidden h-full flex flex-col">

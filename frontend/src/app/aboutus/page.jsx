@@ -70,7 +70,7 @@ const AboutPage = () => {
               className="inline-block mb-3"
             >
               <div className="relative inline-block text-center">
-                <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 pb-5 mt-7 uppercase">
+                <h2 className="text-3xl sm:text-5xl font-bold text-black pb-5 mt-7 uppercase">
                   About <span className="text-yellow-400">Us</span>  
                 </h2>
                 <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
@@ -126,7 +126,7 @@ const AboutPage = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-xl leading-relaxed text-gray-700 mb-6"
+          className="text-xl leading-relaxed text-black mb-6"
         >
           Established in 2022, <span className="text-[#facc15] font-semibold">Calm Stone</span> delivers innovative engineering, procurement, and construction (EPC) services built on speed, precision, and trust. We bring a modern, agile approach to the oil and gas sector, combining deep industry expertise with a dynamic team of seasoned professionals.
         </motion.p>
@@ -136,7 +136,7 @@ const AboutPage = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="text-xl leading-relaxed text-gray-700 mb-6"
+          className="text-xl leading-relaxed text-black mb-6"
         >
           Our comprehensive EPC capabilities span earthworks, civil construction, mechanical and piping installation, as well as electrical and instrumentation works. With a strong commitment to innovation, quality, and safety, Calm Stone is dedicated to transforming the energy landscape through smart, reliable, and efficient project delivery.
         </motion.p>
@@ -146,7 +146,7 @@ const AboutPage = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="text-xl leading-relaxed text-gray-700"
+          className="text-xl leading-relaxed text-black"
         >
           Backed by advanced equipment, cutting-edge processes, and a skilled workforce, we redefine excellence in EPC to build a sustainable future.
         </motion.p>
@@ -188,7 +188,7 @@ const AboutPage = () => {
             <h3 className="text-3xl font-bold text-[#facc15] mb-4">
               {item.title}
             </h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-black leading-relaxed text-lg">
               {item.desc}
             </p>
           </div>
@@ -207,11 +207,12 @@ const AboutPage = () => {
       <h3 className="text-3xl font-bold text-[#facc15] mb-6">
 Our Culture of Purpose and Responsibility
       </h3>
-      <p className="text-gray-700 text-lg leading-relaxed">
+      <p className="text-black text-lg leading-relaxed">
 At Calm Stone, our corporate culture is built on a foundation of integrity, respect, and excellence. We foster a workplace where collaboration, inclusivity, and innovation thrive empowering our people to lead with purpose and deliver with pride.
 Our core values honesty, quality, safety, and sustainability guide everything we do. They shape our decisions, drive our performance, and define the relationships we build with clients, partners, and communities.
       </p>
-      <p>
+          <p className="text-black text-lg leading-relaxed">
+
         Health, Safety, and Environmental (HSE) stewardship is at the heart of our operations. We uphold the highest standards of safety across all sites and processes, ensuring the wellbeing of our workforce and minimizing our impact on the environment.
 Beyond our projects, we believe in creating lasting value for society. Through community engagement and initiatives focused on education, environmental care, and social upliftment, we are committed to making a positive difference wherever we work.
 This is the spirit that drives us a culture rooted in responsibility and inspired by impact.
@@ -236,7 +237,7 @@ This is the spirit that drives us a culture rooted in responsibility and inspire
               WHY CHOOSE <span className="text-yellow-400">US</span>?
             </h2>
             <div className="w-36 h-1 mx-auto mb-6 rounded-full bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-black max-w-2xl mx-auto">
               Discover the reasons why we stand out from the rest.
             </p>
           </div>
@@ -269,10 +270,10 @@ This is the spirit that drives us a culture rooted in responsibility and inspire
                 className="bg-[#fefce8] rounded-full border-8 border-[#facc15]/30 py-8 px-4 flex flex-col items-center hover:shadow-xl transition duration-300"
               >
                 <item.icon className="w-12 h-12 text-[#facc15] mb-6" />
-                <h4 className="text-lg font-bold text-gray-800 mb-2">
+                <h4 className="text-lg font-bold text-black mb-2">
                   {item.title}
                 </h4>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-black">
                   {item.desc}
                 </p>
               </motion.div>
@@ -294,7 +295,7 @@ This is the spirit that drives us a culture rooted in responsibility and inspire
             <h2 className="text-4xl font-bold mb-6">
               <span className="text-black">Ready to</span> <span className="text-[#facc15]">Build Together?</span>
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-black mb-8">
               Experience the Calm Stone difference in your next project
             </p>
             <motion.button

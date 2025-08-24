@@ -34,26 +34,26 @@ export default function EngineeringService() {
       </section>
 
       {/* Project Overview */}
-      <section className="bg-white text-gray-800 py-16 px-6 md:px-20">
+      <section className="bg-white text-black py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto">
           {/* Project Info Block */}
           <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Location</h3>
               <p className="text-xl font-semibold text-amber-600">Mažeikiai, Lithuania</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Year</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Year</h3>
               <p className="text-xl font-semibold text-amber-600">2022</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Client</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Client</h3>
               <p className="text-xl font-semibold text-amber-600">AB Orlen Lietuva</p>
             </div>
           </div>
 
           {/* Project Description */}
-          <div className="space-y-8 text-base md:text-lg leading-relaxed text-gray-700">
+          <div className="space-y-8 text-base md:text-lg leading-relaxed text-black">
             <p>
               For Orlen Lietuva’s Mažeikiai refinery, Calm Stone executed balance piping design across ISBL and OSBL
               areas producing routing drawings, P&IDs, instrumentation diagrams, structural support details, technical

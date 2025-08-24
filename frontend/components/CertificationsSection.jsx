@@ -15,7 +15,7 @@ export default function CertificationsSection() {
     <section className="py-10 bg-white">
       <div className="container mx-auto px-6 text-center">
       <div className="relative inline-block mb-10">
-  <h2 className="text-[36px] md:text-[48px] font-bold text-gray-900 pb-5">
+  <h2 className="text-[36px] md:text-[48px] font-bold text-black pb-5">
     CERTIFICATES AND ACCREDIATIONS 
   </h2>
 

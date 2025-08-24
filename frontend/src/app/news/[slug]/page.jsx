@@ -51,7 +51,7 @@ export default function NewsDetailPage({ params }) {
   const otherNews = newsData.filter((item) => item.slug !== slug);
 
   if (!currentNews) {
-    return <div className="p-10 text-gray-500">Article not found.</div>;
+    return <div className="p-10 text-black">Article not found.</div>;
   }
 
   return (
@@ -67,8 +67,8 @@ export default function NewsDetailPage({ params }) {
           />
 
           <h1 className="text-2xl font-bold mb-4">{currentNews.title}</h1>
-          <p className="text-xs text-gray-500 mb-6">{currentNews.date}</p>
-          <div className="prose text-gray-700 whitespace-pre-line">
+          <p className="text-xs text-black mb-6">{currentNews.date}</p>
+          <div className="prose text-black whitespace-pre-line">
             {currentNews.content}
           </div>
         </article>

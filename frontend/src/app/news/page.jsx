@@ -28,10 +28,10 @@ export default function NewsPage() {
     <main className="bg-gray-50 min-h-screen py-8 px-4 sm:px-8 lg:px-16">
       {/* Header */}
       <header className="text-center mb-8">
-        <h1 className="text-[36px] md:text-[48px] font-bold text-gray-900 mb-2">
+        <h1 className="text-[36px] md:text-[48px] font-bold text-black mb-2">
           News & Updates
         </h1>
-        <p className="text-sm text-gray-600 max-w-xl mx-auto">
+        <p className="text-sm text-black max-w-xl mx-auto">
           Stay informed with the latest developments.
         </p>
       </header>
@@ -59,11 +59,11 @@ export default function NewsPage() {
             {/* Text */}
             <div className="flex flex-col justify-between md:w-3/4">
               <div>
-                <span className="text-xs text-gray-500">{item.date}</span>
-                <h2 className="text-base font-semibold text-gray-800 mt-1 mb-2 line-clamp-2">
+                <span className="text-xs text-black">{item.date}</span>
+                <h2 className="text-base font-semibold text-black mt-1 mb-2 line-clamp-2">
                   {item.title}
                 </h2>
-                <p className="text-gray-600 text-sm line-clamp-2">
+                <p className="text-black text-sm line-clamp-2">
                   {item.summary}
                 </p>
               </div>

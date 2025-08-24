@@ -15,13 +15,13 @@ const ContactPage = () => {
         className="text-center mb-16"
       >
           <div className="relative inline-block mb-10 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 pb-5 mt-10">
+        <h2 className="text-3xl sm:text-4xl font-bold text-black pb-5 mt-10">
          GET IN TOUCH WITH US
         </h2>
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />
       </div>
         
-        <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto">
+        <p className="mt-4 text-lg text-black max-w-xl mx-auto">
           We'd love to hear from you. Reach out for project inquiries, collaborations, or general questions.
         </p>
       </motion.div>
@@ -39,21 +39,21 @@ const ContactPage = () => {
             <Mail className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Email</h4>
-              <p className="text-gray-600 text-lg">dcc@calmstonegc.com</p>
+              <p className="text-black text-lg">dcc@calmstonegc.com</p>
             </div>
           </div>
-          {/* <div className="flex items-start space-x-4">
+          <div className="flex items-start space-x-4">
             <Phone className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Phone</h4>
-              <p className="text-gray-600 text-lg">xxxxxxxxx</p>
+              <p className="text-black text-lg">025509943</p>
             </div>
-          </div> */}
+          </div>
           <div className="flex items-start space-x-4">
             <MapPin className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Address</h4>
-              <p className="text-gray-600 text-lg">Office M2020 ,M2 Bin Arar Holdings Building AI Najda Street, Abu Dhabi</p>
+              <p className="text-black text-lg">No 504, SalamHQ Building, Al Zahiyah Zone, Abu Dhabi UAE</p>
             </div>
           </div>
         </motion.div>

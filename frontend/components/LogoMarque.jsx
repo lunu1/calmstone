@@ -17,7 +17,7 @@ const LogoMarquee = () => {
       
       {/* Heading */}
       <div className="relative inline-block mb-10 text-center">
-        <h2 className="text-[36px] md:text-[48px] font-bold text-gray-900 pb-5">
+        <h2 className="text-[36px] md:text-[48px] font-bold text-black pb-5">
           OUR CLIENTS 
         </h2>
         <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />

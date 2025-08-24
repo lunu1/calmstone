@@ -65,7 +65,7 @@ const ScrollRevealText = ({ heading = '', text = '', mission = '', vision = '' }
         </div>
 
         {/* Animated Text */}
-        <p className="text-[20px] md:text-[24px] font-medium text-gray-800 leading-relaxed transition-opacity duration-700 mb-12">
+        <p className="text-[20px] md:text-[24px] font-medium text-black leading-relaxed transition-opacity duration-700 mb-12">
           {words.map((word, idx) => (
             <span
               key={idx}
@@ -81,12 +81,12 @@ const ScrollRevealText = ({ heading = '', text = '', mission = '', vision = '' }
         {/* Mission & Vision */}
         <div className="text-left md:text-center space-y-8">
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-3">Mission</h3>
-            <p className="text-lg text-gray-700">{mission}</p>
+            <h3 className="text-2xl font-semibold text-black mb-3">Mission</h3>
+            <p className="text-lg text-black">{mission}</p>
           </div>
           <div>
-            <h3 className="text-2xl font-semibold text-gray-900 mb-3">Vision</h3>
-            <p className="text-lg text-gray-700">{vision}</p>
+            <h3 className="text-2xl font-semibold text-black mb-3">Vision</h3>
+            <p className="text-lg text-black">{vision}</p>
           </div>
         </div>
 

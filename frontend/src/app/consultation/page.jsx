@@ -157,7 +157,7 @@ const sections = [
               className={`block px-4 py-3 rounded-lg font-medium transition-all ${
                 activeSection === sec.id
                   ? "bg-yellow-400 text-black font-bold shadow-md"
-                  : "text-gray-700 hover:bg-gray-100"
+                  : "text-black hover:bg-gray-100"
               }`}
             >
               {sec.title}
@@ -193,7 +193,7 @@ const sections = [
                   className={`block px-4 py-3 rounded-lg font-medium transition-all ${
                     activeSection === sec.id
                       ? "bg-yellow-400 text-black font-bold shadow-md"
-                      : "text-gray-700 hover:bg-gray-100"
+                      : "text-black hover:bg-gray-100"
                   }`}
                 >
                   {sec.title}

@@ -94,7 +94,7 @@ export default function ProjectNavigationSlider() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <span className="bg-yellow-400 text-slate-900 px-3 py-1 rounded-full text-sm font-medium">
+                <span className="bg-yellow-400 text-black px-3 py-1 rounded-full text-sm font-medium">
                   {project.category}
                 </span>
               </div>
@@ -134,15 +134,15 @@ export default function ProjectNavigationSlider() {
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-200">
               <div className="flex items-center gap-3 mb-6">
                 <Building className="w-6 h-6 text-yellow-500" />
-                <h2 className="text-2xl font-bold text-slate-800">Project Overview</h2>
+                <h2 className="text-2xl font-bold text-black">Project Overview</h2>
               </div>
-              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+              <p className="text-black text-lg leading-relaxed mb-6">
                 {project.fullDescription}
               </p>
               
               <div className="bg-gradient-to-r from-yellow-50 to-amber-50 rounded-xl p-6 border border-yellow-200">
-                <h3 className="font-semibold text-slate-800 mb-3">Our Scope</h3>
-                <p className="text-slate-600 leading-relaxed">
+                <h3 className="font-semibold text-black mb-3">Our Scope</h3>
+                <p className="text-black leading-relaxed">
                   {project.scope}
                 </p>
               </div>
@@ -152,13 +152,13 @@ export default function ProjectNavigationSlider() {
             <div className="bg-white rounded-2xl p-8 shadow-xl border border-slate-200">
               <div className="flex items-center gap-3 mb-6">
                 <Target className="w-6 h-6 text-yellow-500" />
-                <h2 className="text-2xl font-bold text-slate-800">Key Objectives</h2>
+                <h2 className="text-2xl font-bold text-black">Key Objectives</h2>
               </div>
               <div className="grid gap-4">
                 {project.objectives.map((objective, index) => (
                   <div key={index} className="flex items-start gap-3 p-4 bg-slate-50 rounded-lg">
                     <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2.5 flex-shrink-0" />
-                    <span className="text-slate-700">{objective}</span>
+                    <span className="text-black">{objective}</span>
                   </div>
                 ))}
               </div>
@@ -168,23 +168,23 @@ export default function ProjectNavigationSlider() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-white rounded-2xl p-6 shadow-xl border border-slate-200 sticky top-8">
-              <h3 className="text-xl font-bold text-slate-800 mb-6">Project Details</h3>
+              <h3 className="text-xl font-bold text-black mb-6">Project Details</h3>
               
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                  <span className="text-slate-600">Location</span>
-                  <span className="font-semibold text-slate-800">{project.location}</span>
+                  <span className="text-black">Location</span>
+                  <span className="font-semibold text-black">{project.location}</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                  <span className="text-slate-600">Year</span>
-                  <span className="font-semibold text-slate-800">{project.year}</span>
+                  <span className="text-black">Year</span>
+                  <span className="font-semibold text-black">{project.year}</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                  <span className="text-slate-600">Category</span>
-                  <span className="font-semibold text-slate-800">{project.category}</span>
+                  <span className="text-black">Category</span>
+                  <span className="font-semibold text-black">{project.category}</span>
                 </div>
                 <div className="flex justify-between items-center py-3">
-                  <span className="text-slate-600">Status</span>
+                  <span className="text-black">Status</span>
                   <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     Active
                   </span>
@@ -319,7 +319,7 @@ export default function ProjectNavigationSlider() {
           <button 
             onClick={prevSlide}
             className="absolute top-1/2 -left-4 md:-left-12 -translate-y-1/2 z-20
-                       group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-slate-700 hover:text-white
+                       group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-black hover:text-white
                        p-3 rounded-full border border-yellow-200/60 hover:border-amber-400/80 transition-all duration-300 
                        hover:shadow-xl hover:shadow-amber-300/25"
           >
@@ -329,7 +329,7 @@ export default function ProjectNavigationSlider() {
           <button 
             onClick={nextSlide}
             className="absolute top-1/2 -right-4 md:-right-12 -translate-y-1/2 z-20
-                       group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-slate-700 hover:text-white
+                       group bg-white/80 backdrop-blur-sm hover:bg-amber-400/90 text-black hover:text-white
                        p-3 rounded-full border border-yellow-200/60 hover:border-amber-400/80 transition-all duration-300 
                        hover:shadow-xl hover:shadow-amber-300/25"
           >

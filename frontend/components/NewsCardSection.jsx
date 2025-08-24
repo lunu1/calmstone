@@ -41,7 +41,7 @@ export default function NewsCardSection() {
       {/* Centered Heading */}
       <div className="flex justify-center mb-10 relative">
         <div className="text-center relative">
-          <h2 className="text-[36px] md:text-[48px] font-bold text-gray-900 pb-5 uppercase">
+          <h2 className="text-[36px] md:text-[48px] font-bold text-black pb-5 uppercase">
         News & update
           </h2>
           <span className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-32 h-1 bg-gradient-to-r from-transparent via-yellow-400 to-transparent" />

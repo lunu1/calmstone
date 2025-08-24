@@ -34,26 +34,26 @@ export default function QusahwiraUpgrade() {
       </section>
 
       {/* Project Overview */}
-      <section className="bg-white text-gray-800 py-16 px-6 md:px-20">
+      <section className="bg-white text-black py-16 px-6 md:px-20">
         <div className="max-w-6xl mx-auto">
           {/* Project Info Block */}
           <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Location</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Location</h3>
               <p className="text-xl font-semibold text-amber-600">Abu Dhabi</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Year</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Year</h3>
               <p className="text-xl font-semibold text-amber-600">2025</p>
             </div>
             <div>
-              <h3 className="text-sm text-gray-500 uppercase tracking-wide mb-1">Client</h3>
+              <h3 className="text-sm text-black uppercase tracking-wide mb-1">Client</h3>
               <p className="text-xl font-semibold text-amber-600">ADNOC Onshore</p>
             </div>
           </div>
 
           {/* Project Description */}
-          <div className="space-y-8 text-base md:text-lg leading-relaxed text-gray-700">
+          <div className="space-y-8 text-base md:text-lg leading-relaxed text-black">
             <p>
               As part of ADNOC Onshore’s South East AiP5 development, the SE AiP5 (On-Plot) – Qusahwira Project
               aims to expand the surface facilities at Qusahwira Central Degassing Station (CDS) by 2027 to handle
@@ -61,8 +61,8 @@ export default function QusahwiraUpgrade() {
             </p>
             <p>
               The expansion will boost Qusahwira CDS capacity to
-              <span className="font-semibold text-gray-900"> 103 MBOPD (sustainable)</span> and
-              <span className="font-semibold text-gray-900"> 113 MBOPD (technical)</span>, supporting ADNOC’s
+              <span className="font-semibold text-black"> 103 MBOPD (sustainable)</span> and
+              <span className="font-semibold text-black"> 113 MBOPD (technical)</span>, supporting ADNOC’s
               broader production goals in the South East region.
             </p>
             <p>

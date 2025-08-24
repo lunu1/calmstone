@@ -61,25 +61,25 @@ const SmallFooter = () => {
                 <Mail className="w-5 h-5 text-[#facc15] mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold">Email</h4>
-                  <p className="text-gray-400 text-base">dcc@calmstonegc.com</p>
+                  <p className="text-white text-base">dcc@calmstonegc.com</p>
                 </div>
               </div>
 
               {/*Phone */}
-{/* 
+
               <div className="flex items-start space-x-3 mt-4">
                 <Phone className="w-5 h-5 text-[#facc15] mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold">Phone</h4>
-                  <p className="text-gray-400 text-base">xxxxxxxxx</p>
+                  <p className="text-white text-base">025509943</p>
                 </div>
-              </div> */}
+              </div>
 
               <div className="flex items-start space-x-3 mt-4">
                 <MapPin className="w-5 h-5 text-[#facc15] mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold">Address</h4>
-                  <p className="text-gray-400 text-base">
+                  <p className="text-white text-base">
                    No 504, SalamHQ Building, Al Zahiyah Zone, <br /> Abu Dhabi UAE
                   </p>
                 </div>

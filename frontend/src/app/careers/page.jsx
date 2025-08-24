@@ -349,7 +349,7 @@ Career <span className="text-yellow-400">Empowerment</span>
               <div className="mx-auto max-w-md rounded-lg bg-gray-800 p-10 text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-700 shadow-inner">
                   <svg
-                    className="h-8 w-8 text-gray-400"
+                    className="h-8 w-8 text-black"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -361,7 +361,7 @@ Career <span className="text-yellow-400">Empowerment</span>
                 <h3 className="mb-2 text-xl font-semibold">
                   No roles available
                 </h3>
-                <p className="mb-6 text-gray-400">
+                <p className="mb-6 text-black">
                   We’re growing fast check back soon or reach out!
                 </p>
                 <Link
