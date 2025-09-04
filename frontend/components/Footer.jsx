@@ -71,7 +71,7 @@ const SmallFooter = () => {
                 <Phone className="w-5 h-5 text-[#facc15] mt-1" />
                 <div>
                   <h4 className="text-lg font-semibold">Phone</h4>
-                  <p className="text-white text-base">025509943</p>
+                  <p className="text-white text-base"> +971 2 5509943</p>
                 </div>
               </div>
 
@@ -80,7 +80,7 @@ const SmallFooter = () => {
                 <div>
                   <h4 className="text-lg font-semibold">Address</h4>
                   <p className="text-white text-base">
-                   No 504, SalamHQ Building, Al Zahiyah Zone, <br /> Abu Dhabi UAE
+                  Office No 504, SalamHQ Building, Al Zahiyah Zone, Abu Dhabi UAE
                   </p>
                 </div>
               </div>

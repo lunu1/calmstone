@@ -46,14 +46,14 @@ const ContactPage = () => {
             <Phone className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Phone</h4>
-              <p className="text-black text-lg">025509943</p>
+              <p className="text-black text-lg">+971 2 5509943</p>
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <MapPin className="w-6 h-6 text-[#facc15] mt-1" />
             <div>
               <h4 className="text-xl font-semibold">Address</h4>
-              <p className="text-black text-lg">No 504, SalamHQ Building, Al Zahiyah Zone, Abu Dhabi UAE</p>
+              <p className="text-black text-lg">Office No 504, SalamHQ Building, Al Zahiyah Zone,Abu Dhabiv UAE</p>
             </div>
           </div>
         </motion.div>
