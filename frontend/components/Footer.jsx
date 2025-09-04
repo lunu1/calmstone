@@ -34,7 +34,7 @@ const SmallFooter = () => {
                 Contact
               </Link>
               <Link href="/news" className="text-white hover:text-yellow-400 transition">
-               News and Updates
+              News & Insights
               </Link>
             </nav>
           </div>

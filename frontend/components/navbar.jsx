@@ -146,14 +146,14 @@ const Header = () => {
           <Link
             href="/"
             onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
-            className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
+            className="font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
           >
             Home
           </Link>
           <Link
             href="/aboutus"
             onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
-            className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
+            className="font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
           >
             About Us
           </Link>
@@ -166,7 +166,7 @@ const Header = () => {
                   // collapse any open sub when switching menus
                   setOpenSubMenu(null);
                 }}
-                className="mega-trigger flex items-center gap-1 font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
+                className="mega-trigger flex items-center gap-1 font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
               >
                 {menu}
                 <ChevronDown
@@ -224,9 +224,16 @@ const Header = () => {
           <Link
             href="/careers"
             onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
-            className="font-medium transition-colors duration-200 py-2 text-lg tracking-wide uppercase text-black hover:text-yellow-400"
+            className="font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
           >
             Careers
+          </Link>
+          <Link
+            href="/news"
+            onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
+            className="font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
+          >
+            News and Insights
           </Link>
         </div>
 
@@ -337,6 +344,13 @@ const Header = () => {
               onClick={() => setIsMobileOpen(false)}
             >
               Careers
+            </Link>
+            <Link
+              href="/news"
+              className="block text-black font-medium py-3 border-b border-gray-200"
+              onClick={() => setIsMobileOpen(false)}
+            >
+              News and Insights
             </Link>
 
             {/* Let's Connect */}
