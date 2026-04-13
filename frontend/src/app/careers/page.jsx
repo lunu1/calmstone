@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import JobCard from "./JobCard";
 import Testimonials from "../../../components/Testimonials";
+import CareersClient from "./CareersClient";
 
 export const metadata = { title: "Careers  Join Our Energy Team" };
 
@@ -11,73 +12,73 @@ export const metadata = { title: "Careers  Join Our Energy Team" };
 /*                               Dummy job data                               */
 /* -------------------------------------------------------------------------- */
 const dummyJobs = [
-  {
-    _id: "1",
-    title: "Construction Manager (Oil & Gas)",
-    department: "Construction",
-    location: "Abu Dhabi, UAE",
-    type: "Full-time",
-    experience: "15+ years",
-    salary: "Starting from AED 15,000 to AED 25,000",
-    description:
-      "We are hiring a performance-driven Construction Manager for large-scale oil & gas and EPC construction projects in the UAE. The selected candidate will oversee project execution, field management, and stakeholder coordination while being held accountable for KPIs and incentivized through a lucrative commission and bonus structure.",
-    responsibilities: [
-      "Project Execution & Delivery : Lead and deliver EPC and construction projects in compliance with contractual, budgetary, and safety requirements.",
-      "Define project milestones and ensure on-time completion within approved scope and cost.",
-      "Manage subcontractors, vendors, consultants, and site teams across disciplines.",
-      "Conduct progress reviews, generate reports, and ensure quality deliverables.",
-    "Monitor risk and mitigate project deviations proactively.Business Development & Commercial Growth ",
-    "Identify new project opportunities within existing client accounts and new sectors.",
-    "Identify scope variations, additional works, and VO opportunities",
-    "Prepare technical proposals and tender documentation in coordination with estimation and commercial teams. ",
-    "Build strong relationships with ADNOC, EPC contractors, and consultants",
-    "Influence repeat business and client referrals.Health, Safety & Compliance",
-    "Ensure full HSE compliance with ADNOC and UAE regulations.",
-    "Lead audits, inspections, and incident prevention programs.",
-    "Team Building : Lead the development, mentoring, and upskilling of the site project team ",
-    "Support HR in recruiting specialist roles through networks.",
-    "Maintain a network of manpower suppliers and subcontractors to ensure rapid resource mobilization during project ramp-ups",
-    "Support long-term team capability by assigning coaching, on-the-job training, and structured skill-building programs",
+  // {
+  //   _id: "1",
+  //   title: "Construction Manager (Oil & Gas)",
+  //   department: "Construction",
+  //   location: "Abu Dhabi, UAE",
+  //   type: "Full-time",
+  //   experience: "15+ years",
+  //   salary: "Starting from AED 15,000 to AED 25,000",
+  //   description:
+  //     "We are hiring a performance-driven Construction Manager for large-scale oil & gas and EPC construction projects in the UAE. The selected candidate will oversee project execution, field management, and stakeholder coordination while being held accountable for KPIs and incentivized through a lucrative commission and bonus structure.",
+  //   responsibilities: [
+  //     "Project Execution & Delivery : Lead and deliver EPC and construction projects in compliance with contractual, budgetary, and safety requirements.",
+  //     "Define project milestones and ensure on-time completion within approved scope and cost.",
+  //     "Manage subcontractors, vendors, consultants, and site teams across disciplines.",
+  //     "Conduct progress reviews, generate reports, and ensure quality deliverables.",
+  //   "Monitor risk and mitigate project deviations proactively.Business Development & Commercial Growth ",
+  //   "Identify new project opportunities within existing client accounts and new sectors.",
+  //   "Identify scope variations, additional works, and VO opportunities",
+  //   "Prepare technical proposals and tender documentation in coordination with estimation and commercial teams. ",
+  //   "Build strong relationships with ADNOC, EPC contractors, and consultants",
+  //   "Influence repeat business and client referrals.Health, Safety & Compliance",
+  //   "Ensure full HSE compliance with ADNOC and UAE regulations.",
+  //   "Lead audits, inspections, and incident prevention programs.",
+  //   "Team Building : Lead the development, mentoring, and upskilling of the site project team ",
+  //   "Support HR in recruiting specialist roles through networks.",
+  //   "Maintain a network of manpower suppliers and subcontractors to ensure rapid resource mobilization during project ramp-ups",
+  //   "Support long-term team capability by assigning coaching, on-the-job training, and structured skill-building programs",
 
-    ],
-    requirements: [
-      "MBA degree in Civil, Mechanical, Petroleum, or Electrical Engineering.",
-     "Minimum 15 + years of experience within minimum 5 years in upstream construction in oil & gas (onshore/offshore).",
-     "10 years of UAE experience is mandatory",
-     "Minimum of $50 million value projects handled in the past under the direct involvements.",
-     "Candidates with ADNOC project experience or ADNOC approval are preferred."
-    ],
-    postedDate: "04-08-2025",
-  },
-  {
-    _id: "2",
-    title: "Project Engineer – Civil",
-    department: "Engineering",
-    location: "Abu Dhabi, UAE (Site-based)",
-    type: "Full-time",
-    experience: "7+ years",
-    salary: "Starting from AED 8000",
-    description:
-      "The role involves supervising civil works, reviewing drawings and BOQs, coordinating subcontractors, and ensuring compliance with quality and safety standards, especially within ADNOC project environments.",
-    responsibilities: [
-      "Review drawings, perform quantity take-off (BOQ), and support material planning.",
-      "Develop construction execution statement and ITP plan",
-      "Supervise site works: excavation, concrete, foundations, and structural activities.",
-      "Coordinate setting out, site execution, and subcontractor activities.",
-      "Ensure works meet design, safety, and quality standards.",
-      "Support civil QC, inspections, and documentation.",
-      "Liaise with consultants, contractors, and client reps to resolve site issues.",
-    ],
-    requirements: [
-      "Bachelor’s in Civil Engineering.",
-      "7+ years of civil site experience, incl. 2+ years in ADNOC.",
-      "Skilled in drawing interpretation, work planning, and quantity take-off.",
-      "Familiar with civil QC processes and concrete/foundation works.",
-      "Strong coordination, problem-solving, and communication skills.",
-      "Fluent in English.",
-    ],
-    postedDate: "04-08-2025",
-  },
+  //   ],
+  //   requirements: [
+  //     "MBA degree in Civil, Mechanical, Petroleum, or Electrical Engineering.",
+  //    "Minimum 15 + years of experience within minimum 5 years in upstream construction in oil & gas (onshore/offshore).",
+  //    "10 years of UAE experience is mandatory",
+  //    "Minimum of $50 million value projects handled in the past under the direct involvements.",
+  //    "Candidates with ADNOC project experience or ADNOC approval are preferred."
+  //   ],
+  //   postedDate: "04-08-2025",
+  // },
+  // {
+  //   _id: "2",
+  //   title: "Project Engineer – Civil",
+  //   department: "Engineering",
+  //   location: "Abu Dhabi, UAE (Site-based)",
+  //   type: "Full-time",
+  //   experience: "7+ years",
+  //   salary: "Starting from AED 8000",
+  //   description:
+  //     "The role involves supervising civil works, reviewing drawings and BOQs, coordinating subcontractors, and ensuring compliance with quality and safety standards, especially within ADNOC project environments.",
+  //   responsibilities: [
+  //     "Review drawings, perform quantity take-off (BOQ), and support material planning.",
+  //     "Develop construction execution statement and ITP plan",
+  //     "Supervise site works: excavation, concrete, foundations, and structural activities.",
+  //     "Coordinate setting out, site execution, and subcontractor activities.",
+  //     "Ensure works meet design, safety, and quality standards.",
+  //     "Support civil QC, inspections, and documentation.",
+  //     "Liaise with consultants, contractors, and client reps to resolve site issues.",
+  //   ],
+  //   requirements: [
+  //     "Bachelor’s in Civil Engineering.",
+  //     "7+ years of civil site experience, incl. 2+ years in ADNOC.",
+  //     "Skilled in drawing interpretation, work planning, and quantity take-off.",
+  //     "Familiar with civil QC processes and concrete/foundation works.",
+  //     "Strong coordination, problem-solving, and communication skills.",
+  //     "Fluent in English.",
+  //   ],
+  //   postedDate: "04-08-2025",
+  // },
   // {
   //   _id: "3",
   //   title: "Site Surveyor (Civil)",
@@ -138,38 +139,38 @@ const dummyJobs = [
   //   ],
   //   postedDate: "2024-01-15",
   // },
-  {
-    _id: "5",
-    title: "Accountant",
-    department: "Finance",
-    location: "Abu Dhabi, UAE (Site-based)",
-    type: "Full-time",
-    experience: "5+ years",
-    salary: "Starting AED 5000- AED 6000",
-    preference: "The candidates who are immediately available to join",
-    description:
-      "The ideal candidate must have a minimum of 5 years of accounting experience, with at least 3 years of relevant experience within the UAE. Proficiency in accounting software’s and solid knowledge of UAE financial regulations and labor law are essential.",
-    responsibilities: [
-      "Assist in day-to-day accounting tasks including data entry, ledger maintenance, and reconciliations.",
-      "Manage accounts payable and receivable.",
-      "Support in monthly, quarterly, and yearly closings.",
-      "Prepare financial reports as per senior accountant or management requirements.",
-      "Ensure compliance with UAE financial regulations and company policies.",
-      "Maintain accurate and up-to-date financial records.",
-      "Experience in handling VAT submissions, and financial audits.",
-      "Support audit preparations and coordination with external auditors.",
-      "Outgoing personality for submissions and collections.",
-    ],
-    requirements: [
-      "Bachelor’s degree in Accounting, Finance, or a related field.",
-      "Minimum 5 years of accounting experience, with at least 3 years in the UAE.",
-      "Hands-on experience with QuickBooks and other accounting software’s are a plus.",
-      "Strong understanding of UAE financial regulations and labor law.",
-      "Ability to work independently and as part of a team.",
-      "Strong communication and reporting skills.",
-    ],
-    postedDate: "04-08-2025",
-  },
+  // {
+  //   _id: "5",
+  //   title: "Accountant",
+  //   department: "Finance",
+  //   location: "Abu Dhabi, UAE (Site-based)",
+  //   type: "Full-time",
+  //   experience: "5+ years",
+  //   salary: "Starting AED 5000- AED 6000",
+  //   preference: "The candidates who are immediately available to join",
+  //   description:
+  //     "The ideal candidate must have a minimum of 5 years of accounting experience, with at least 3 years of relevant experience within the UAE. Proficiency in accounting software’s and solid knowledge of UAE financial regulations and labor law are essential.",
+  //   responsibilities: [
+  //     "Assist in day-to-day accounting tasks including data entry, ledger maintenance, and reconciliations.",
+  //     "Manage accounts payable and receivable.",
+  //     "Support in monthly, quarterly, and yearly closings.",
+  //     "Prepare financial reports as per senior accountant or management requirements.",
+  //     "Ensure compliance with UAE financial regulations and company policies.",
+  //     "Maintain accurate and up-to-date financial records.",
+  //     "Experience in handling VAT submissions, and financial audits.",
+  //     "Support audit preparations and coordination with external auditors.",
+  //     "Outgoing personality for submissions and collections.",
+  //   ],
+  //   requirements: [
+  //     "Bachelor’s degree in Accounting, Finance, or a related field.",
+  //     "Minimum 5 years of accounting experience, with at least 3 years in the UAE.",
+  //     "Hands-on experience with QuickBooks and other accounting software’s are a plus.",
+  //     "Strong understanding of UAE financial regulations and labor law.",
+  //     "Ability to work independently and as part of a team.",
+  //     "Strong communication and reporting skills.",
+  //   ],
+  //   postedDate: "04-08-2025",
+  // },
   // {
   //   _id: "6",
   //   title: "Project Planning Control Engineer",
@@ -338,7 +339,7 @@ Career <span className="text-yellow-400">Empowerment</span>
             </p>
           </header>
 
-          <div className="mt-10">
+          {/* <div className="mt-10">
             {dummyJobs.length ? (
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {dummyJobs.map((job) => (
@@ -347,7 +348,7 @@ Career <span className="text-yellow-400">Empowerment</span>
               </div>
             ) : (
               <div className="mx-auto max-w-md rounded-lg bg-gray-800 p-10 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-gray-700 shadow-inner">
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-700 shadow-inner">
                   <svg
                     className="h-8 w-8 text-black"
                     fill="none"
@@ -366,13 +367,14 @@ Career <span className="text-yellow-400">Empowerment</span>
                 </p>
                 <Link
                   href="#"
-                  className="inline-block rounded-lg bg-blue-600 px-6 py-2 font-semibold text-white hover:bg-blue-700 transition"
+                  className="inline-block rounded-lg bg-yellow-600 px-6 py-2 font-semibold text-white hover:bg-yellow-700 transition"
                 >
                   Submit Résumé
                 </Link>
               </div>
             )}
-          </div>
+          </div> */}
+          <CareersClient />
         </div>
       </section>
   <Testimonials/>

@@ -1,67 +1,91 @@
-"use client";
+'use client';
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
-const megaMenus = {
+// ----- Fallback (used if API fails) -----
+// NOTE: point fallback hrefs to /services/<slug>
+const fallbackServices = [
+  {
+    label: "Oilfield Surface Construction",
+    href: "/construction",
+    subpoints: [
+      "Civil & Structural",
+      "Mechanical & Piping",
+      "Electrical & Instrumentation",
+      "Equipment Installation",
+      "High-Density Polyethylene (HDPE)",
+      "Fusion Bonded Epoxy (FBE)",
+    ],
+  },
+  {
+    label: "Technical Consulting",
+    href: "/consultation",
+    subpoints: [
+      "Enginneering & Design",
+      "HSE Safety Assessments",
+      "Engineering Manpower Support",
+      "Digital Oilfield",
+      "Control system services",
+    ],
+  },
+  {
+    label: "Material and Equipment Supply",
+    href: "/equipment",
+    subpoints: [
+      "Control systems Supply",
+      "Piping Bulk Material",
+      "Electrical & Instrumentation Bulk Material",
+    ],
+  },
+];
+
+const buildMenusFromServices = (cards) => ({
   Services: {
     columns: {
-      Services: [
-        {
-          label: "Oilfield Surface Construction",
-          href: "/construction",
-          subpoints: [
-            "Civil & Structural",
-            "Mechanical & Piping",
-            "Electrical & Instrumentation",
-            "Equipment Installation",
-            "High-Density Polyethylene (HDPE)",
-            "Fusion Bonded Epoxy (FBE)",
-          ],
-        },
-        {
-          label: "Technical Consulting",
-          href: "/consultation",
-          subpoints: [
-            "Enginneering & Design",
-            "HSE Safety Assessments",
-            "Engineering Manpower Support",
-            "Digital Oilfield",
-            "Control system services",
-          ],
-        },
-        {
-          label: "Material and Equipment Supply",
-          href: "/equipment",
-          subpoints: [
-            "Control systems Supply",
-            "Piping Bulk Material",
-            "Electrical & Instrumentation Bulk Material",
-          ],
-        },
-      ],
+      Services: cards,
     },
   },
-};
+});
 
-const Header = () => {
+export default function Header() {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null); // desktop dropdown
-  const [openSubMenu, setOpenSubMenu] = useState(null); // desktop subpoints
-  const [mobileExpandedMenu, setMobileExpandedMenu] = useState(null); // mobile Services expand
+  const [openMenu, setOpenMenu] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [mobileExpandedMenu, setMobileExpandedMenu] = useState(null);
   const headerRef = useRef(null);
-  const [headerHeight, setHeaderHeight] = useState(72); // fallback default
+  const [headerHeight, setHeaderHeight] = useState(72);
 
-  const links = Object.keys(megaMenus);
+  // dynamic mega menu (default to fallback)
+  const [megaMenus, setMegaMenus] = useState(buildMenusFromServices(fallbackServices));
+
+  // Fetch ServicePages → build menus
+  useEffect(() => {
+    (async () => {
+      try {
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/api/service-pages/menu`,
+          { cache: "no-store" }
+        );
+        if (!res.ok) throw new Error("Failed to load services menu");
+        const items = await res.json(); // [{ label, href: '/services/<slug>', subpoints: [...] }]
+        if (Array.isArray(items) && items.length) {
+          setMegaMenus(buildMenusFromServices(items));
+        }
+      } catch {
+        // keep fallback
+      }
+    })();
+  }, []);
+
+  const links = useMemo(() => Object.keys(megaMenus), [megaMenus]);
 
   // Measure header height so the mobile drawer can sit exactly below it
   useEffect(() => {
     const measure = () => {
-      if (headerRef.current) {
-        setHeaderHeight(headerRef.current.offsetHeight);
-      }
+      if (headerRef.current) setHeaderHeight(headerRef.current.offsetHeight);
     };
     measure();
     window.addEventListener("resize", measure);
@@ -70,24 +94,13 @@ const Header = () => {
 
   // Prevent body scrolling when mobile menu is open
   useEffect(() => {
-    if (isMobileOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
+    document.body.style.overflow = isMobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
   }, [isMobileOpen]);
 
-  const toggleDropdown = (menu) =>
-    setOpenMenu(openMenu === menu ? null : menu);
-
-  const toggleSubDropdown = (label) =>
-    setOpenSubMenu(openSubMenu === label ? null : label);
-
-  const toggleMobileSubmenu = (menu) =>
-    setMobileExpandedMenu(mobileExpandedMenu === menu ? null : menu);
+  const toggleDropdown = (menu) => setOpenMenu(openMenu === menu ? null : menu);
+  const toggleSubDropdown = (label) => setOpenSubMenu(openSubMenu === label ? null : label);
+  const toggleMobileSubmenu = (menu) => setMobileExpandedMenu(mobileExpandedMenu === menu ? null : menu);
 
   // Close dropdown on outside click / Escape / scroll
   useEffect(() => {
@@ -99,23 +112,19 @@ const Header = () => {
         setOpenSubMenu(null);
       }
     };
-
     const handleKeyDown = (e) => {
       if (e.key === "Escape") {
         setOpenMenu(null);
         setOpenSubMenu(null);
       }
     };
-
     const handleScroll = () => {
       setOpenMenu(null);
       setOpenSubMenu(null);
     };
-
     document.addEventListener("mousedown", handleDocClick);
     document.addEventListener("keydown", handleKeyDown);
     window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       document.removeEventListener("mousedown", handleDocClick);
       document.removeEventListener("keydown", handleKeyDown);
@@ -150,6 +159,7 @@ const Header = () => {
           >
             Home
           </Link>
+
           <Link
             href="/aboutus"
             onClick={() => { setOpenMenu(null); setOpenSubMenu(null); }}
@@ -161,11 +171,7 @@ const Header = () => {
           {links.map((menu) => (
             <div key={menu} className="relative">
               <button
-                onClick={() => {
-                  toggleDropdown(menu);
-                  // collapse any open sub when switching menus
-                  setOpenSubMenu(null);
-                }}
+                onClick={() => { toggleDropdown(menu); setOpenSubMenu(null); }}
                 className="mega-trigger flex items-center gap-1 font-medium transition-colors duration-200 py-2 text-md tracking-wide uppercase text-black hover:text-yellow-400"
               >
                 {menu}
@@ -260,37 +266,23 @@ const Header = () => {
         </button>
       </nav>
 
-      {/* Mobile Menu (fixed drawer under header, scrollable) */}
+      {/* Mobile Menu */}
       {isMobileOpen && (
         <div
           id="mobile-menu"
           className="lg:hidden fixed inset-x-0 bottom-0 bg-white border-t"
-          style={{
-            top: headerHeight, // sits right below the measured header
-            WebkitOverflowScrolling: "touch",
-            overflowY: "auto",
-          }}
+          style={{ top: headerHeight, WebkitOverflowScrolling: "touch", overflowY: "auto" }}
         >
           <div className="px-6 py-6 space-y-4">
-            {/* Home */}
-            <Link
-              href="/"
-              className="block text-black font-medium py-3 border-b border-gray-200"
-              onClick={() => setIsMobileOpen(false)}
-            >
+            <Link href="/" className="block text-black font-medium py-3 border-b border-gray-200" onClick={() => setIsMobileOpen(false)}>
               Home
             </Link>
 
-            {/* About Us */}
-            <Link
-              href="/aboutus"
-              className="block text-black font-medium py-3 border-b border-gray-200"
-              onClick={() => setIsMobileOpen(false)}
-            >
+            <Link href="/aboutus" className="block text-black font-medium py-3 border-b border-gray-200" onClick={() => setIsMobileOpen(false)}>
               About Us
             </Link>
 
-            {/* Services */}
+            {/* Dynamic Services */}
             <div>
               <button
                 onClick={() => toggleMobileSubmenu("Services")}
@@ -298,21 +290,14 @@ const Header = () => {
                 aria-expanded={mobileExpandedMenu === "Services"}
               >
                 Services
-                <ChevronDown
-                  size={16}
-                  className={`transform transition-transform ${mobileExpandedMenu === "Services" ? "rotate-180" : ""}`}
-                />
+                <ChevronDown size={16} className={`transform transition-transform ${mobileExpandedMenu === "Services" ? "rotate-180" : ""}`} />
               </button>
               {mobileExpandedMenu === "Services" && (
                 <div className="ml-4 mt-2 border-l border-gray-300 pl-4">
                   {Object.entries(megaMenus["Services"].columns).map(([cat, items]) =>
                     items.map(({ label, href, subpoints }) => (
                       <div key={label} className="mb-2">
-                        <Link
-                          href={href}
-                          className="block font-semibold py-2"
-                          onClick={() => setIsMobileOpen(false)}
-                        >
+                        <Link href={href} className="block font-semibold py-2" onClick={() => setIsMobileOpen(false)}>
                           {label}
                         </Link>
                         {!!subpoints?.length && (
@@ -337,38 +322,21 @@ const Header = () => {
               )}
             </div>
 
-            {/* Careers */}
-            <Link
-              href="/careers"
-              className="block text-black font-medium py-3 border-b border-gray-200"
-              onClick={() => setIsMobileOpen(false)}
-            >
+            <Link href="/careers" className="block text-black font-medium py-3 border-b border-gray-200" onClick={() => setIsMobileOpen(false)}>
               Careers
             </Link>
-            <Link
-              href="/news"
-              className="block text-black font-medium py-3 border-b border-gray-200"
-              onClick={() => setIsMobileOpen(false)}
-            >
+            <Link href="/news" className="block text-black font-medium py-3 border-b border-gray-200" onClick={() => setIsMobileOpen(false)}>
               News and Insights
             </Link>
 
-            {/* Let's Connect */}
-            <Link
-              href="/contact"
-              className="block bg-yellow-400 text-black text-center py-3 rounded-lg font-semibold hover:bg-yellow-500"
-              onClick={() => setIsMobileOpen(false)}
-            >
+            <Link href="/contact" className="block bg-yellow-400 text-black text-center py-3 rounded-lg font-semibold hover:bg-yellow-500" onClick={() => setIsMobileOpen(false)}>
               Let's Connect
             </Link>
 
-            {/* Bottom spacer so last button isn't flush with device bottom bar */}
             <div className="h-4" />
           </div>
         </div>
       )}
     </header>
   );
-};
-
-export default Header;
+}

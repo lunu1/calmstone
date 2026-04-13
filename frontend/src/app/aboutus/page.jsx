@@ -128,7 +128,7 @@ const AboutPage = () => {
           viewport={{ once: true }}
           className="text-xl leading-relaxed text-black mb-6"
         >
-          Established in 2022, <span className="text-[#facc15] font-semibold">Calm Stone</span> delivers innovative engineering, procurement, and construction (EPC) services built on speed, precision, and trust. We bring a modern, agile approach to the oil and gas sector, combining deep industry expertise with a dynamic team of seasoned professionals.
+          <span className="text-[#facc15] font-semibold">Calm Stone</span> delivers innovative engineering, procurement, and construction (EPC) services built on speed, precision, and trust. We bring a modern, agile approach to the oil and gas sector, combining deep industry expertise with a dynamic team of seasoned professionals.
         </motion.p>
 
         <motion.p
